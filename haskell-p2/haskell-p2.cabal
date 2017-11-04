@@ -58,6 +58,7 @@ library
     , time
     , case-insensitive
     , wai
+    , http-types
   if (flag(dev)) || (flag(library-only))
     ghc-options: -Wall -fwarn-tabs -O0
     cpp-options: -DDEVELOPMENT
@@ -120,6 +121,7 @@ executable haskell-p2
     , time
     , case-insensitive
     , wai
+    , http-types
     , haskell-p2
   if flag(library-only)
     buildable: False
@@ -171,6 +173,7 @@ test-suite test
     , time
     , case-insensitive
     , wai
+    , http-types
     , haskell-p2
     , hspec >=2.0.0
     , yesod-test

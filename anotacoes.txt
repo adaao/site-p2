@@ -1,0 +1,2 @@
+link do template bootstrap:
+https://blackrockdigital.github.io/startbootstrap-clean-blog/
