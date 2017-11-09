@@ -1,2 +1,4 @@
 link do template bootstrap:
 https://blackrockdigital.github.io/startbootstrap-clean-blog/
+
+No caso de execultar o projeto em casa, o ip será 127.0.0.1:8081
