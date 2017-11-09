@@ -2,3 +2,14 @@ link do template bootstrap:
 https://blackrockdigital.github.io/startbootstrap-clean-blog/
 
 No caso de execultar o projeto em casa, o ip será 127.0.0.1:8081
+
+acessando o banco:
+psql -h ec2-50-17-201-204.compute-1.amazonaws.com -U anjieiifxtoety -d db8v45mcb9hspl
+
+9845cd6c9aaac5f4b4cc1190c6e84724d8cef93564a5d32f998562fef9e59b25
+
+comando maneiro:
+
+drop schema public cascade
+
+
