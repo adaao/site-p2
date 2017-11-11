@@ -1,5 +1,5 @@
 {-# LANGUAGE PackageImports #-}
-import "haskell-p2" Application (develMain)
+import "aulahaskell" Application (develMain)
 import Prelude (IO)
 
 main :: IO ()

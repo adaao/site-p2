@@ -15,8 +15,8 @@ stanzas:
     #
     # The path given is for Stack projects. If you're still using cabal, change
     # to
-    # exec: ../dist/build/haskell-p2/haskell-p2
-    exec: ../dist/bin/haskell-p2
+    # exec: ../dist/build/aulahaskell/aulahaskell
+    exec: ../dist/bin/aulahaskell
 
     # Command line options passed to your application.
     args: []
@@ -25,7 +25,7 @@ stanzas:
       # You can specify one or more hostnames for your application to respond
       # to. The primary hostname will be used for generating your application
       # root.
-      - www.haskell-p2.com
+      - www.aulahaskell.com
 
     # Enable to force Keter to redirect to https
     # Can be added to any stanza
@@ -34,7 +34,7 @@ stanzas:
   # Static files.
   - type: static-files
     hosts:
-      - static.haskell-p2.com
+      - static.aulahaskell.com
     root: ../static
 
     # Uncomment to turn on directory listings.
@@ -44,9 +44,9 @@ stanzas:
   - type: redirect
 
     hosts:
-      - haskell-p2.com
+      - aulahaskell.com
     actions:
-      - host: www.haskell-p2.com
+      - host: www.aulahaskell.com
         # secure: false
         # port: 80
 
