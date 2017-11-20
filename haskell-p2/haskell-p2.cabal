@@ -70,7 +70,8 @@ library
       Handler.Comment
       Handler.Common
       Handler.Home
-      Handler.Pagina
+      Handler.HomeOld
+      Handler.HomeOld2
       Handler.Profile
       Import
       Import.NoFoundation
