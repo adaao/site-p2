@@ -1,0 +1,26 @@
+UserCategory json
+  userType Text
+  
+User json
+  email Text
+  nickName Text
+  password Text
+  userTypeid UserCategoryId
+  UniqueEmail email
+  deriving Show
+
+Board json
+  boardName Text
+
+Publication json
+  boardid BoardId
+  userid UserId
+  content Text
+
+Reply json
+  publicationid PublicationId
+  userid UserId
+  content Text  
+
+
+ -- By default this file is used in Model.hs (which is imported by Foundation.hs)
