@@ -9,7 +9,7 @@ module Handler.User where
 
 import Import
 import Database.Persist.Postgresql
-{-
+
 formUsuario :: Form (,,,) 
 formUsuario = renderDivs $ (,,,)
     <$> areq textField "Nome: " Nothing
@@ -42,4 +42,3 @@ postUsuarioR = do
             |]
             redirect UserR
         _ -> redirect HomeR
--}
