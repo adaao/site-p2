@@ -5,8 +5,10 @@
 
 /                                  HomeR                 GET
 /login                             LoginR                GET POST
+/logout                            LogSairR              POST
+
 /userCategory/list                 ListUserTypeR         GET
 /userCategory/insert               InsertUserTypeR       POST
-/userCategory/#UserCategoryId/update/#Text/userType   UpdateUserTypeR PUT
+/userCategory/#UserCategoryId/update/#Text/userType  UpdateUserTypeR PUT
 
-/user                              UserR                 GET POST
+/user UsuarioR GET POST
