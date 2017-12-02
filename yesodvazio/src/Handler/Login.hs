@@ -10,9 +10,9 @@ module Handler.Login where
 import Import
 import Database.Persist.Postgresql
 
-formCliente :: Form (Text,Text) 
-formCliente = renderDivs $ (,) 
-    <*> areq emailField "Email: " Nothing
+formLogin :: Form (Text,Text) 
+formLogin = renderDivs $ (,) 
+    <$> areq emailField "Email: " Nothing
     <*> areq passwordField "Senha: " Nothing
     
 getLoginR :: Handler Html
@@ -23,14 +23,14 @@ getLoginR = do
         [whamlet|
             $maybe msg <- mensa
                 ^{msg}
-            <form action=@{LoginR} method=post>
+            <form method=post>
                 ^{widget}
                 <input type="submit" value="Login">
         |]
 
-autentica :: Text -> Text -> HandlerT App IO (Maybe Cliente)
-autentica email senha = runDB $ selectFirst [ClienteEmail ==. email
-                                            ,ClienteSenha ==. senha] []
+autentica :: Text -> Text -> HandlerT App IO (Maybe (Entity User))
+autentica email senha = runDB $ selectFirst [UserEmail ==. email
+                                            ,UserPassword ==. senha] []
 
 postLoginR :: Handler Html
 postLoginR = do 
@@ -44,9 +44,9 @@ postLoginR = do
                         <div> 
                             Usuario nao encontrado/Senha invalida!
                     |]
-                    redirect LoginR
-                Just cli -> do 
-                    setSession "_NOME" (clienteNome cli)
+                    redirect UserR
+                Just (Entity _ cli) -> do 
+                    setSession "_NOME" (userNickName cli)
                     redirect HomeR
-            redirect ClienteR
+            redirect UserR
         _ -> redirect HomeR

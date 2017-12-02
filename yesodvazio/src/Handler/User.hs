@@ -5,17 +5,17 @@
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE TypeFamilies #-}
 -- | Common handler functions.
-module Handler.Usuario where
+module Handler.User where
 
 import Import
 import Database.Persist.Postgresql
-
-formUsuario :: Form Usuario 
-formUsuario = renderDivs $ Usuario 
+{-
+formUsuario :: Form (,,,) 
+formUsuario = renderDivs $ (,,,)
     <$> areq textField "Nome: " Nothing
     <*> areq emailField "Email: " Nothing
     <*> areq passwordField "Senha: " Nothing
-    <*> areq dayField      "Data de Nasc: " Nothing
+    -- <*> areq userCategoryField "Tipo do usuario: " Nothing
     
 getUsuarioR :: Handler Html
 getUsuarioR = do 
@@ -25,7 +25,7 @@ getUsuarioR = do
         [whamlet|
             $maybe msg <- mensa
                 ^{msg}
-            <form action=@{UsuarioR} method=post>
+            <form action=@{HomeR} method=post>
                 ^{widget}
                 <input type="submit" value="Cadastrar">
         |]
@@ -40,5 +40,6 @@ postUsuarioR = do
                 <div> 
                     Usuario com sucesso!
             |]
-            redirect UsuarioR
+            redirect UserR
         _ -> redirect HomeR
+-}

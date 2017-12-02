@@ -70,7 +70,6 @@ library
       Handler.Common
       Handler.Home
       Handler.Login
-      Handler.Principal
       Handler.User
       Handler.UserCategory
       Import

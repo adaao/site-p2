@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Haskell Chan
-		
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/homepage.css">
-	<body>
-		<nav class="navbar navbar-dark bg-dark">
-			<span class="navbar-text" href="#">Haskell Chan
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Haskell Chan
+        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-text" href="#">Haskell Chan
 
-		<div class="container">
-			<div class="row col-lg-12 about">
-				<div class="card bg-light mb-3">
-					<div class="card-header">Sobre
+        <div class="container">
+            <div class="row col-lg-12 about">
+                <div class="card bg-light mb-3">
+                    <div class="card-header">Sobre
 
-					<div class="card-body">
-						<p class="card-text text-justify">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia temporibus nostrum similique iste quidem culpa, tempora est architecto, dicta animi, possimus nobis minus ut qui laborum debitis vitae necessitatibus dignissimos!
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aut esse molestias ex, quos similique cum? Et modi, quia error laborum reprehenderit vel ex inventore voluptatibus, doloremque, quod corrupti id.
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptates minus, perferendis nam ab quam eaque aspernatur sint repellendus. Neque assumenda excepturi harum corporis dolorem, sit dolor, labore. Delectus, unde!
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="col-lg-5 float-left">
-						<div class="card" style="margin-bottom: 2rem">
-							<div class="card-header">Login
+                    <div class="card-body">
+                        <p class="card-text text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia temporibus nostrum similique iste quidem culpa, tempora est architecto, dicta animi, possimus nobis minus ut qui laborum debitis vitae necessitatibus dignissimos!
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aut esse molestias ex, quos similique cum? Et modi, quia error laborum reprehenderit vel ex inventore voluptatibus, doloremque, quod corrupti id.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptates minus, perferendis nam ab quam eaque aspernatur sint repellendus. Neque assumenda excepturi harum corporis dolorem, sit dolor, labore. Delectus, unde!
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-5 float-left">
+                        <div class="card" style="margin-bottom: 2rem">
+                            <div class="card-header">Login
 
-							<div class="card-body">
-								<form>
-									<div class="form-group">
-										<label for="username">Nome de Usuário
-										<input type="text" id="username" class="form-control" placeholder="Nome de Usuário">
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="username">Nome de Usuário
+                                        <input type="text" id="username" class="form-control" placeholder="Nome de Usuário">
 
-									<div class="form-group">
-										<label for="password">Senha
-										<input type="password" id="password" class="form-control" placeholder="Senha">
-									<button type="submit" class="btn btn-primary float-right">Logar
+                                    <div class="form-group">
+                                        <label for="password">Senha
+                                        <input type="password" id="password" class="form-control" placeholder="Senha">
+                                    <button type="submit" class="btn btn-primary float-right">Logar
 
-					<div class="col-lg-5 float-right">
-						<div class="card">
-							<div class="card-header">Cadastrar
-							<div class="card-body">
-								<form>
-									<div class="form-group">
-										<label for="username">Nome de Usuário
-										<input type="text" id="username" class="form-control" placeholder="Nome de Usuário">
+                    <div class="col-lg-5 float-right">
+                        <div class="card">
+                            <div class="card-header">Cadastrar
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="username">Nome de Usuário
+                                        <input type="text" id="username" class="form-control" placeholder="Nome de Usuário">
 
-									<div class="form-group">
-										<label for="password">Senha
-										<input type="password" id="password" class="form-control" placeholder="Senha">
+                                    <div class="form-group">
+                                        <label for="password">Senha
+                                        <input type="password" id="password" class="form-control" placeholder="Senha">
 
-									<button type="submit" class="btn btn-primary float-right">Cadastrar
+                                    <button type="submit" class="btn btn-primary float-right">Cadastrar
 
-		<footer>
-			<div class="container text-center">
-				<p class="text-muted">Copyright &copy; 2017
+        <footer>
+            <div class="container text-center">
+                <p class="text-muted">Copyright &copy; 2017
