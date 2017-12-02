@@ -1,7 +1,7 @@
-UserCategory json
+UserCategory
   userType Text
   
-User json
+User
   email Text
   nickName Text
   password Text
@@ -9,15 +9,15 @@ User json
   UniqueEmail email
   deriving Show
 
-Board json
+Board
   boardName Text
 
-Publication json
+Publication
   boardid BoardId
   userid UserId
   content Text
 
-Reply json
+Reply
   publicationid PublicationId
   userid UserId
   content Text  
