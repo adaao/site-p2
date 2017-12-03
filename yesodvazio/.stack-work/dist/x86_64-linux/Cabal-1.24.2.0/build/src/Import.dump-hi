@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-02 18:28:36.913267 UTC
+2017-12-02 22:51:59.139261 UTC
 
 interface aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Import 8002
-  interface hash: 769d89656954a27f6eb7a5719dc2223a
-  ABI hash: 669b56745c0f38b88fbd0e792675a600
-  export-list hash: 5cc5e498260c499346c90b984aee8157
+  interface hash: d663608754f074998db54ac8e7ea553f
+  ABI hash: 050eade7dd74c64be12a03dccde92519
+  export-list hash: 73d3153c05a419b852a09e26beb899e6
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: ab396f11155bd696ab63895436e6f1df
   sig of: Nothing
@@ -1880,7 +1880,7 @@ exports:
   Yesod.Core.Widget.ToWidgetMedia{Yesod.Core.Widget.toWidgetMedia}
   Yesod.Routes.Class.ParseRoute{Yesod.Routes.Class.parseRoute}
   Yesod.Routes.Class.RenderRoute{Yesod.Routes.Class.Route Yesod.Routes.Class.renderRoute}
-  Yesod.Routes.Class.Route|{Foundation.FaviconR Foundation.HomeR Foundation.InsertUserTypeR Foundation.ListUserTypeR Foundation.RobotsR Foundation.StaticR Foundation.UpdateUserTypeR Foundation.UserR Yesod.Auth.Routes.CheckR Yesod.Auth.Routes.LoginR Yesod.Auth.Routes.LogoutR Yesod.Auth.Routes.PluginR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
+  Yesod.Routes.Class.Route|{Foundation.FaviconR Foundation.HomeR Foundation.InsertUserTypeR Foundation.ListUserTypeR Foundation.LogSairR Foundation.LogarR Foundation.RobotsR Foundation.StaticR Foundation.UpdateUserTypeR Foundation.UserR Yesod.Auth.Routes.CheckR Yesod.Auth.Routes.LoginR Yesod.Auth.Routes.LogoutR Yesod.Auth.Routes.PluginR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
   Yesod.Routes.Class.RouteAttrs{Yesod.Routes.Class.routeAttrs}
   Yesod.Form.Fields.AutoFocus
   Yesod.Form.Fields.Option{Yesod.Form.Fields.Option optionDisplay optionExternalValue optionInternalValue}
@@ -2250,27 +2250,29 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.FromJSON f70746c5b1cd1a03ee098f0728e87383
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Foundation 15197e801b931dec1fa3df67b2a8f399
-  exports: e9ad23e0e7aaf9673ce4a957cc7c3bf6
-  App 112af83b386eccf312a39d49c41ad9cb
-  App 3385a30521b65ca574d349cb74b685d6
-  FaviconR e8bd67884d2a508cf37b71bc2e740837
-  Form ed57a20115fde985d3f554e3a070d9ab
-  Handler 086103b03fb298fcd8d864554babc9f7
-  HomeR 55f6086e3ac00323bf80e1bf8508798b
-  InsertUserTypeR 71ff3dbdf8cbf1eef223534bce9f2767
-  ListUserTypeR f94860cc31c19450badb4d2e291c33ae
-  RobotsR 0d49dbb44320c33c9fda07fc3952282f
-  StaticR 9140e8cdb65a1d290767cdfb11e34017
-  UpdateUserTypeR f733d0e6e2d6c44554f36eef96f24fc0
-  UserR 699dcf3b31a2b2f3fb398997aab5639d
-  Widget 4ee254c47c955051ef2d506d4a93cf52
-  appConnPool fa195bac99d11112b19c346e567c4afc
-  appHttpManager 3385a30521b65ca574d349cb74b685d6
-  appLogger 46699ca7a13f23c647f09b715ec699a3
-  appSettings d64da2decc529b4ae232bf835bed40b5
-  appStatic 83cf7d045ecf92144838ea92983ba69f
-  resourcesApp 19fb3d83f2bd7cb73f7cf10d9bdf16b1
+import  -/  Foundation fb09f0ff6c22b7f7c5fd440864f3a1d3
+  exports: f9c14b5e2954934b076ced7639a61334
+  App fda32a056e76c095faff94b89ea7a521
+  App e5d1760161eb4c45e17639c58435ad8c
+  FaviconR d35490c0ba618f02af55f8f887edf663
+  Form caa171ea95297e908511b08149e59dff
+  Handler 5667a2514ef5d55cf1b0477b195a2f5b
+  HomeR 6e5901926ab6341bc8ab65d462a28b47
+  InsertUserTypeR 9913d18a793cb8fbd2ddfaeedb76d16f
+  ListUserTypeR 3fd72350512d752afc6fbf4f35b73c9e
+  LogSairR c62989b299a25c9cbb7659a6d645feae
+  LogarR d8e7115f870ca7765f8515017abe91cc
+  RobotsR d32e961502994ff5c818cc102a957163
+  StaticR 2bf041276573c5e2bbfb35042f0a615f
+  UpdateUserTypeR 33ea5707451ba5424f515c891d0b9001
+  UserR 070e0f2221d7e5a5f047ae56f8266711
+  Widget 06db9578fb85656e3eddc15882fd7ec3
+  appConnPool 706d47568d892e253f36673a53bb16b9
+  appHttpManager e5d1760161eb4c45e17639c58435ad8c
+  appLogger fb2dc68794ecac2013b1e6d3ab25af18
+  appSettings 68a559610365694370107360d0f055ae
+  appStatic c703d37f7483012861c14dd0fa40860a
+  resourcesApp 24cd6fbaf23f7c645a84da87b7485707
 import  -/  Import.NoFoundation c2632011bccd059d6e2919cf29154f83
   exports: 32165acf9456156ee0068c4cbf29f9ab
 import  -/  Model 72a20d7ada686ebd9d047304786643a3

@@ -1,0 +1,14 @@
+criar arquvivos para cada Entidade tabela do banco -> ver config/models
+
+adicionar os imports necessarios
+
+implementar create read update para user
+
+implementar create read update para board
+
+implementar create read update para reply
+
+implementar create read update para userCategory
+
+implementar create read update para publication
+
