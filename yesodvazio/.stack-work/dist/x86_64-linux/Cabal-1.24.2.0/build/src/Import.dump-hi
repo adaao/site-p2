@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-02 22:51:59.139261 UTC
+2017-12-03 21:07:37.58298 UTC
 
 interface aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Import 8002
-  interface hash: d663608754f074998db54ac8e7ea553f
-  ABI hash: 050eade7dd74c64be12a03dccde92519
-  export-list hash: 73d3153c05a419b852a09e26beb899e6
+  interface hash: 90a5e617b6cbe53041f662022833d239
+  ABI hash: 101717ab49c4cf319645ded0ad98fa73
+  export-list hash: 3b6a485788e1ff91dbc722aea54ecd2a
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: ab396f11155bd696ab63895436e6f1df
   sig of: Nothing
@@ -27,7 +27,9 @@ exports:
   Settings.configSettingsYmlValue
   Settings.widgetFile
   Settings.widgetFileSettings
+  Settings.StaticFiles.css_board_css
   Settings.StaticFiles.css_bootstrap_css
+  Settings.StaticFiles.css_simplesidebar_css
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_svg
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_ttf
@@ -1880,7 +1882,7 @@ exports:
   Yesod.Core.Widget.ToWidgetMedia{Yesod.Core.Widget.toWidgetMedia}
   Yesod.Routes.Class.ParseRoute{Yesod.Routes.Class.parseRoute}
   Yesod.Routes.Class.RenderRoute{Yesod.Routes.Class.Route Yesod.Routes.Class.renderRoute}
-  Yesod.Routes.Class.Route|{Foundation.FaviconR Foundation.HomeR Foundation.InsertUserTypeR Foundation.ListUserTypeR Foundation.LogSairR Foundation.LogarR Foundation.RobotsR Foundation.StaticR Foundation.UpdateUserTypeR Foundation.UserR Yesod.Auth.Routes.CheckR Yesod.Auth.Routes.LoginR Yesod.Auth.Routes.LogoutR Yesod.Auth.Routes.PluginR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
+  Yesod.Routes.Class.Route|{Foundation.BoardR Foundation.FaviconR Foundation.HomeR Foundation.RobotsR Foundation.StaticR Yesod.Auth.Routes.CheckR Yesod.Auth.Routes.LoginR Yesod.Auth.Routes.LogoutR Yesod.Auth.Routes.PluginR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
   Yesod.Routes.Class.RouteAttrs{Yesod.Routes.Class.routeAttrs}
   Yesod.Form.Fields.AutoFocus
   Yesod.Form.Fields.Option{Yesod.Form.Fields.Option optionDisplay optionExternalValue optionInternalValue}
@@ -2250,31 +2252,26 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.FromJSON f70746c5b1cd1a03ee098f0728e87383
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Foundation fb09f0ff6c22b7f7c5fd440864f3a1d3
-  exports: f9c14b5e2954934b076ced7639a61334
-  App fda32a056e76c095faff94b89ea7a521
-  App e5d1760161eb4c45e17639c58435ad8c
-  FaviconR d35490c0ba618f02af55f8f887edf663
-  Form caa171ea95297e908511b08149e59dff
-  Handler 5667a2514ef5d55cf1b0477b195a2f5b
-  HomeR 6e5901926ab6341bc8ab65d462a28b47
-  InsertUserTypeR 9913d18a793cb8fbd2ddfaeedb76d16f
-  ListUserTypeR 3fd72350512d752afc6fbf4f35b73c9e
-  LogSairR c62989b299a25c9cbb7659a6d645feae
-  LogarR d8e7115f870ca7765f8515017abe91cc
-  RobotsR d32e961502994ff5c818cc102a957163
-  StaticR 2bf041276573c5e2bbfb35042f0a615f
-  UpdateUserTypeR 33ea5707451ba5424f515c891d0b9001
-  UserR 070e0f2221d7e5a5f047ae56f8266711
-  Widget 06db9578fb85656e3eddc15882fd7ec3
-  appConnPool 706d47568d892e253f36673a53bb16b9
-  appHttpManager e5d1760161eb4c45e17639c58435ad8c
-  appLogger fb2dc68794ecac2013b1e6d3ab25af18
-  appSettings 68a559610365694370107360d0f055ae
-  appStatic c703d37f7483012861c14dd0fa40860a
-  resourcesApp 24cd6fbaf23f7c645a84da87b7485707
-import  -/  Import.NoFoundation c2632011bccd059d6e2919cf29154f83
-  exports: 32165acf9456156ee0068c4cbf29f9ab
+import  -/  Foundation f85b1adfbad6874813d24fc82df3c85a
+  exports: 5a177c7f3ac7de86028509679085bd62
+  App 825170c1257e2550d556435a0b07bef1
+  App aefd9c109ec98d179ab5cc782a4676c1
+  BoardR 11871e98fa1a1363e86418f8d27ce193
+  FaviconR 74c950b0ff283ce94333908f0d625e46
+  Form 966f224b7500fed73f1eff0377166f89
+  Handler b5735b3402b804003da871294a9a77e6
+  HomeR f995618133b2291b9986bafbea591a5f
+  RobotsR 8651ef7b2dbc3b26535076177fe47e16
+  StaticR 7c27153095805cebede839568bfbc303
+  Widget 15cc94dc34d52b6ea9be9472fdf5b86d
+  appConnPool 457330784b8fdd93333e26e1e0737066
+  appHttpManager aefd9c109ec98d179ab5cc782a4676c1
+  appLogger 9a32511e8d8f15b12ae3aee6e3afb388
+  appSettings 61c8a1903c55dd2dbb363efd853835d2
+  appStatic 517ff110482f0fb60e7b41726eac4084
+  resourcesApp a83f72e02de28db1aecdf1cce138b530
+import  -/  Import.NoFoundation 1c6e3638018a532798b64f20fec46d43
+  exports: 027fce94ca112eb96fb010660af80fb5
 import  -/  Model 72a20d7ada686ebd9d047304786643a3
   Board e96a893b44bf0e0a9bbea035d0004de7
   Board 3a42c82099cc1b9022b4870be760c2fb
@@ -2357,12 +2354,14 @@ import  -/  Settings fd9cd92ed3e9c57f6121e27358d62974
   configSettingsYmlValue f0727a190ea136efa53f3a2cfaaea291
   widgetFile f3071b10edb28cd1d16a99cb5f1af507
   widgetFileSettings 6233b25a8c00df1cf4c785321fba3714
-import  -/  Settings.StaticFiles 6f71648442c67f5b67c8440ec89c87ec
-  css_bootstrap_css b2b65d7626231e3e7e06f0111053ac3a
-  fonts_glyphicons_halflings_regular_eot 87cbfb7feb7104bcbbb2f17402ba6082
-  fonts_glyphicons_halflings_regular_svg a1a62dd5cc7c7bf230ef166204095108
-  fonts_glyphicons_halflings_regular_ttf 718c706e735a85181186ba8d48ade5aa
-  fonts_glyphicons_halflings_regular_woff fb64f835738cc7547270fff17deaa6a3
+import  -/  Settings.StaticFiles e41ba72ac3719f0f571fadaefc8c5442
+  css_board_css be905026816b1bfb4556cfcc880245f1
+  css_bootstrap_css 17840b9a84a829531deef52934d9b68e
+  css_simplesidebar_css 3df076a8e434a87556e3c0f1af6601ba
+  fonts_glyphicons_halflings_regular_eot 2adf03bd837c0433cc270dc21f174195
+  fonts_glyphicons_halflings_regular_svg 61a25edb18393ff8dc3ab9d70b7e5c5f
+  fonts_glyphicons_halflings_regular_ttf 6a727bced85b7d7ab004b46fac46167e
+  fonts_glyphicons_halflings_regular_woff 2c534986a25868f00de8f3a0647660c7
 import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
 import  -/  base-4.9.1.0:Control.Arrow 70754b538e7d75521cd68162917b6946
 import  -/  base-4.9.1.0:Control.Category 74288f70105bf6db5ff51d18c3e2c349

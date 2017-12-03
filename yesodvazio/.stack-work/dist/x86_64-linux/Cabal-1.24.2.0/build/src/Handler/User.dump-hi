@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-02 22:52:00.081207 UTC
+2017-12-03 21:07:39.958193 UTC
 
 interface aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Handler.User 8002
-  interface hash: 4f5f99e3116354f8059f94fffb074c31
+  interface hash: 91e12e9958769d814d27e7bceba53bfd
   ABI hash: 6836e83aeae5b0184216bf7030034929
   export-list hash: 1e8b56763333b07e7cc4a1dce12cf412
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -339,8 +339,8 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types
                          yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
-import  -/  Import 050eade7dd74c64be12a03dccde92519
-  exports: 73d3153c05a419b852a09e26beb899e6
+import  -/  Import 101717ab49c4cf319645ded0ad98fa73
+  exports: 3b6a485788e1ff91dbc722aea54ecd2a
 import  -/  persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-2dvMQeNrMidL0mEJqjlR9n:Database.Persist.Postgresql 10b056d5394430454ce529b83ca42db3
 9c33090e863661ddfa3771edd5ef3632
   $trModule :: GHC.Types.Module

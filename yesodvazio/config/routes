@@ -3,12 +3,5 @@
 /favicon.ico FaviconR GET
 /robots.txt RobotsR GET
 
-/                                  HomeR                 GET
-/login                             LoginR                GET POST
-/logout                            LogSairR              POST
-
-/userCategory/list                 ListUserTypeR         GET
-/userCategory/insert               InsertUserTypeR       POST
-/userCategory/#UserCategoryId/update/#Text/userType  UpdateUserTypeR PUT
-
-/user UsuarioR GET POST
+/               HomeR          GET
+/board          BoardR         GET

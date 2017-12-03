@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2017-11-22 01:56:29.843073 UTC
+2017-12-03 21:07:49.267999 UTC
 
 interface main@main:Main 8002
-  interface hash: 0d74c29dc6ebbfa919ab6141406aba7c
+  interface hash: 81b06e1e4803c2bbe888cef00c5edb36
   ABI hash: 1fbf4adf23784e3c2938264e94389569
   export-list hash: cfef6cd16d934e11371fe841758ab425
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -341,7 +341,7 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types
                          yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
-import  -/  aulahaskell-0.0.0@aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Application 958ba80da3d17d742f2e3a0bc4e243a7
+import  -/  aulahaskell-0.0.0@aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Application 37c5ec91c029a5e5b529b067c3b0c310
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
 d6831ef04cb9301b090dfae6f7bb7ec7

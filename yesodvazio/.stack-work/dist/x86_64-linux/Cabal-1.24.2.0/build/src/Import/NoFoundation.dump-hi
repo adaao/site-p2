@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-02 18:00:31.91568 UTC
+2017-12-03 21:07:33.586717 UTC
 
 interface aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Import.NoFoundation 8002
-  interface hash: e4ba1ce28b73983fc95b8953b270707e
-  ABI hash: c2632011bccd059d6e2919cf29154f83
-  export-list hash: 32165acf9456156ee0068c4cbf29f9ab
+  interface hash: 64674101aab0f8c912b04cc1fa60db55
+  ABI hash: 1c6e3638018a532798b64f20fec46d43
+  export-list hash: 027fce94ca112eb96fb010660af80fb5
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 5e6e116e79fd7c2679f3688e577f5394
   sig of: Nothing
@@ -26,7 +26,9 @@ exports:
   Settings.configSettingsYmlValue
   Settings.widgetFile
   Settings.widgetFileSettings
+  Settings.StaticFiles.css_board_css
   Settings.StaticFiles.css_bootstrap_css
+  Settings.StaticFiles.css_simplesidebar_css
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_svg
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_ttf
@@ -2327,13 +2329,15 @@ import  -/  Settings fd9cd92ed3e9c57f6121e27358d62974
   configSettingsYmlValue f0727a190ea136efa53f3a2cfaaea291
   widgetFile f3071b10edb28cd1d16a99cb5f1af507
   widgetFileSettings 6233b25a8c00df1cf4c785321fba3714
-import  -/  Settings.StaticFiles 6f71648442c67f5b67c8440ec89c87ec
-  exports: 2c18a6028ec246dd652150bfb8162a2d
-  css_bootstrap_css b2b65d7626231e3e7e06f0111053ac3a
-  fonts_glyphicons_halflings_regular_eot 87cbfb7feb7104bcbbb2f17402ba6082
-  fonts_glyphicons_halflings_regular_svg a1a62dd5cc7c7bf230ef166204095108
-  fonts_glyphicons_halflings_regular_ttf 718c706e735a85181186ba8d48ade5aa
-  fonts_glyphicons_halflings_regular_woff fb64f835738cc7547270fff17deaa6a3
+import  -/  Settings.StaticFiles e41ba72ac3719f0f571fadaefc8c5442
+  exports: 3a9ebe987c623ceb0d9a9fd9fe9694d7
+  css_board_css be905026816b1bfb4556cfcc880245f1
+  css_bootstrap_css 17840b9a84a829531deef52934d9b68e
+  css_simplesidebar_css 3df076a8e434a87556e3c0f1af6601ba
+  fonts_glyphicons_halflings_regular_eot 2adf03bd837c0433cc270dc21f174195
+  fonts_glyphicons_halflings_regular_svg 61a25edb18393ff8dc3ab9d70b7e5c5f
+  fonts_glyphicons_halflings_regular_ttf 6a727bced85b7d7ab004b46fac46167e
+  fonts_glyphicons_halflings_regular_woff 2c534986a25868f00de8f3a0647660c7
 import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
 import  -/  base-4.9.1.0:Control.Category 74288f70105bf6db5ff51d18c3e2c349
 import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98

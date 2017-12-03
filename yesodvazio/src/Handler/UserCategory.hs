@@ -8,7 +8,7 @@ module Handler.UserCategory where
 import Import
 import Network.HTTP.Types.Status
 import Database.Persist.Postgresql
-
+{-
 getListUserTypeR :: Handler Value
 getListUserTypeR = do
   userTypeList <- runDB $ selectList [] [Asc UserCategoryUserType]
@@ -25,3 +25,4 @@ putUpdateUserTypeR userCategoryId updatedUserType = do
   _ <- runDB $ get404 userCategoryId
   runDB $ update userCategoryId [UserCategoryUserType =. updatedUserType]
   sendStatusJSON noContent204 (object ["resp" .= (fromSqlKey userCategoryId)])
+-}

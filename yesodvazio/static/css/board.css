@@ -1,0 +1,47 @@
+.menu-title {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.3rem !important;
+    text-align: center;
+}
+
+.menu-item {
+    color: white;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.board-info {
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 1.5rem;
+}
+
+.board-image {
+    max-height: 100px;
+    max-width: 300px;
+    border: solid 1px black;
+}
+
+.board-title {
+    margin-top: 0.4rem;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
+}
+
+.card-body {
+    text-align: justify;
+}
+
+button a {
+    color: white;
+}
+
+button a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+button a:active {
+    color: white;
+}

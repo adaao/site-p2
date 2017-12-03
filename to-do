@@ -1,6 +1,6 @@
-criar arquvivos para cada Entidade tabela do banco -> ver config/models
+* feito > criar arquvivos para cada Entidade tabela do banco -> ver config/models
 
-adicionar os imports necessarios
+* feito > adicionar os imports necessarios
 
 implementar create read update para user
 

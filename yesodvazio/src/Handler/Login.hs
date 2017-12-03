@@ -15,8 +15,8 @@ formLogin = renderDivs $ (,)
     <$> areq emailField "Email: " Nothing
     <*> areq passwordField "Senha: " Nothing
     
-getLoginR :: Handler Html
-getLoginR = do 
+getLogarR :: Handler Html
+getLogarR = do 
     (widget,enctype) <- generateFormPost formLogin
     mensa <- getMessage
     defaultLayout $ do 
@@ -32,8 +32,8 @@ autentica :: Text -> Text -> HandlerT App IO (Maybe (Entity User))
 autentica email senha = runDB $ selectFirst [UserEmail ==. email
                                             ,UserPassword ==. senha] []
 
-postLoginR :: Handler Html
-postLoginR = do 
+postLogSairR :: Handler Html
+postLogSairR = do 
     ((resultado,_),_) <- runFormPost formLogin
     case resultado of 
         FormSuccess (email,senha) -> do 
@@ -44,9 +44,9 @@ postLoginR = do
                         <div> 
                             Usuario nao encontrado/Senha invalida!
                     |]
-                    redirect UserR
+                    redirect HomeR
                 Just (Entity _ cli) -> do 
                     setSession "_NOME" (userNickName cli)
                     redirect HomeR
-            redirect UserR
+            redirect HomeR
         _ -> redirect HomeR

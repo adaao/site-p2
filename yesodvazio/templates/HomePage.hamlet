@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+$doctype 5
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Haskell Chan
         
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/homepage.css">
-    <body>
+        <link rel="stylesheet" type="text/css" href=@{StaticR css_bootstrap_css}>
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <body style="overflow-x: 'hidden'">
         <nav class="navbar navbar-dark bg-dark">
-            <span class="navbar-text" href="#">Haskell Chan
+            <span class="navbar-text" style="font-family: 'Indie Flower', cursive; font-size: 1.5rem; letter-spacing: 0.2rem;" href="#">Haskell Chan
 
         <div class="container">
-            <div class="row col-lg-12 about">
+            <div class="row col-lg-12" style="margin: 4rem 0rem 2rem 0rem">
                 <div class="card bg-light mb-3">
                     <div class="card-header">Sobre
 
@@ -28,11 +28,10 @@
                             <div class="card-header">Login
 
                             <div class="card-body">
-                                <form>
+                                <form action=@{HomeR} method="post">
                                     <div class="form-group">
                                         <label for="username">Nome de Usuário
                                         <input type="text" id="username" class="form-control" placeholder="Nome de Usuário">
-
                                     <div class="form-group">
                                         <label for="password">Senha
                                         <input type="password" id="password" class="form-control" placeholder="Senha">
@@ -42,17 +41,15 @@
                         <div class="card">
                             <div class="card-header">Cadastrar
                             <div class="card-body">
-                                <form>
+                                <form action=@{HomeR} method="post">
                                     <div class="form-group">
                                         <label for="username">Nome de Usuário
                                         <input type="text" id="username" class="form-control" placeholder="Nome de Usuário">
-
                                     <div class="form-group">
                                         <label for="password">Senha
                                         <input type="password" id="password" class="form-control" placeholder="Senha">
-
                                     <button type="submit" class="btn btn-primary float-right">Cadastrar
 
-        <footer>
+        <footer style="margin-top: 2rem">
             <div class="container text-center">
                 <p class="text-muted">Copyright &copy; 2017

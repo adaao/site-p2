@@ -67,9 +67,12 @@ library
   exposed-modules:
       Application
       Foundation
+      Handler.Board
       Handler.Common
       Handler.Home
       Handler.Login
+      Handler.Publication
+      Handler.Reply
       Handler.User
       Handler.UserCategory
       Import

@@ -1,0 +1,235 @@
+$doctype 5
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Haskell Chan
+        <link rel="stylesheet" href=@{StaticR css_bootstrap_css}>
+        <style>
+            .menu-title {
+                font-family: 'Indie Flower', cursive;
+                font-size: 2.3rem !important;
+                text-align: center;
+            }
+
+            .menu-item {
+                color: white;
+                cursor: pointer;
+                margin-top: 0.5rem;
+            }
+
+            .board-info {
+                padding-bottom: 0.6rem;
+                border-bottom: 1px solid black;
+                margin-bottom: 1.5rem;
+            }
+
+            .board-image {
+                max-height: 100px;
+                max-width: 300px;
+                border: solid 1px black;
+            }
+
+            .board-title {
+                margin-top: 0.4rem;
+                font-size: 3rem;
+                font-weight: bold;
+                font-family: 'Indie Flower', cursive;
+            }
+
+            .card-body {
+                text-align: justify;
+            }
+
+            button a {
+                color: white;
+            }
+
+            button a:hover {
+                color: white;
+                text-decoration: none;
+            }
+
+            button a:active {
+                color: white;
+            }
+
+            body {
+                overflow-x: hidden;
+            }
+
+            #wrapper {
+                padding-left: 0;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+
+            #wrapper.toggled {
+                padding-left: 250px;
+            }
+
+            #sidebar-wrapper {
+                z-index: 1000;
+                position: fixed;
+                left: 250px;
+                width: 0;
+                height: 100%;
+                margin-left: -250px;
+                overflow-y: auto;
+                background: #343A40;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+
+            #wrapper.toggled #sidebar-wrapper {
+                width: 250px;
+            }
+
+            #page-content-wrapper {
+                width: 100%;
+                position: absolute;
+                padding: 15px;
+            }
+
+            #wrapper.toggled #page-content-wrapper {
+                position: absolute;
+                margin-right: -250px;
+            }
+
+            .sidebar-nav {
+                position: absolute;
+                top: 0;
+                width: 250px;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            .sidebar-nav li {
+                text-indent: 20px;
+                line-height: 40px;
+            }
+
+            .sidebar-nav li a {
+                display: block;
+                text-decoration: none;
+                color: #999999;
+            }
+
+            .sidebar-nav li a:hover {
+                text-decoration: none;
+                color: #fff;
+                background: rgba(255, 255, 255, 0.2);
+            }
+
+            .sidebar-nav li a:active, .sidebar-nav li a:focus {
+                text-decoration: none;
+            }
+
+            .sidebar-nav>.sidebar-brand {
+                height: 65px;
+                font-size: 18px;
+                line-height: 60px;
+            }
+
+            .sidebar-nav>.sidebar-brand a {
+                color: #999999;
+            }
+
+            .sidebar-nav>.sidebar-brand a:hover {
+                color: #fff;
+                background: none;
+            }
+    <body>
+        <div id="wrapper">
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand menu-title">
+                        <a href="homepage.html">Haskell Chan
+                    <li class="text-center menu-item"><a>/hs/
+                    <li class="text-center menu-item"><a>/rb/
+                    <li class="text-center menu-item"><a>/py/
+                    <li class="text-center menu-item"><a>/spl/
+                    <li class="text-center menu-item"><a>/cbl/
+                    <li class="text-center menu-item"><a>/java/
+                    <li class="text-center menu-item"><a>/cs/
+                    <li class="text-center menu-item"><a>/js/
+
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="col-lg-12 board-info">
+                        <img src="img/hs.gif" class="board-image mx-auto d-block">
+                        <h1 class="text-center board-title">/hs/ - Haskell
+
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="float-left">#0
+                                <span class="float-right">00/00/0000
+
+                            <div class="card-body">
+                                <h4 class="card-title">Título da Thread
+                                <h6 class="card-subtitle mb-2 text-muted">Autor
+
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo esse a, beatae mollitia tenetur placeat et laboriosam explicabo possimus a...
+
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-danger float-left">Apagar
+                                <button type="button" class="btn btn-primary float-right"><a href="thread.html">Abrir
+
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="float-left">#0
+                                <span class="float-right">00/00/0000
+
+                            <div class="card-body">
+                                <h4 class="card-title">Título da Thread
+                                <h6 class="card-subtitle mb-2 text-muted">Autor
+
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis perferendis quasi, nihil dolores similique sapiente, esse sit veniam...
+
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-danger float-left">Apagar
+                                <button type="button" class="btn btn-primary float-right"><a href="thread.html">Abrir
+
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="float-left">#0
+                                <span class="float-right">00/00/0000
+
+                            <div class="card-body">
+                                <h4 class="card-title">Título da Thread
+                                <h6 class="card-subtitle mb-2 text-muted">Autor
+
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum accusamus quod, saepe assumenda commodi, deserunt ratione repellend...
+
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-danger float-left">Apagar
+                                <button type="button" class="btn btn-primary float-right"><a href="thread.html">Abrir
+
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="float-left">#0
+                                <span class="float-right">00/00/0000
+
+                            <div class="card-body">
+                                <h4 class="card-title">Título da Thread
+                                <h6 class="card-subtitle mb-2 text-muted">Autor
+
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia doloremque dignissimos officiis officia placeat totam quo quae beatae...
+
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-danger float-left">Apagar
+                                <button type="button" class="btn btn-primary float-right"><a href="thread.html">Abrir
+
+            <footer class="col-lg-12">
+                <div class="text-center">
+                    <p class="text-muted">Copyright &copy; 2017
+        <script src="js/jquery.min.js">
+        <script src="js/bootstrap.bundle.min.js">
+        <script>
+            $("#wrapper").toggleClass("toggled");
