@@ -5,7 +5,6 @@ User json
   email Text
   nickName Text
   password Text
-  userTypeid UserCategoryId
   UniqueEmail email
   deriving Show
 

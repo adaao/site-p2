@@ -5,3 +5,5 @@
 
 /               HomeR          GET
 /board          BoardR         GET
+/login          LogarR         GET POST
+/user           UserR          GET POST
