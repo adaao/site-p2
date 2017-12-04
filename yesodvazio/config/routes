@@ -3,7 +3,18 @@
 /favicon.ico FaviconR GET
 /robots.txt RobotsR GET
 
-/               HomeR          GET
-/board          BoardR         GET
-/login          LogarR         GET POST
-/user           UserR          GET POST
+/                    HomeR               GET
+
+/board               BoardR              GET
+
+/publication         PublicationR        GET
+
+/login               LogarR              GET POST
+
+/user                UserR               GET POST
+/createUser                CreateUserR   POST
+/readUser/#UserId/read     ReadUserR     GET
+/updateUser/#UserId/update UpdateUserR   PUT
+
+
+
