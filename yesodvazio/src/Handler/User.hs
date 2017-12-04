@@ -9,17 +9,19 @@ module Handler.User where
 
 import Import
 import Database.Persist.Postgresql
-{-
-formUsuario :: Form (,,,) 
-formUsuario = renderDivs $ (,,,)
-    <$> areq textField "Nome: " Nothing
+
+formUser :: Form User
+formUser = renderDivs $ User
+    <$> areq textField "nickName: " Nothing
     <*> areq emailField "Email: " Nothing
     <*> areq passwordField "Senha: " Nothing
-    -- <*> areq userCategoryField "Tipo do usuario: " Nothing
+    -- a categoria do usuario deve ser enviada de forma automatica
+    -- não e o suario que escolhe
+   -- <*> areq keyField "Tipo do usuario: " Nothing
     
-getUsuarioR :: Handler Html
-getUsuarioR = do 
-    (widget,enctype) <- generateFormPost formUsuario
+getUserR :: Handler Html
+getUserR = do 
+    (widget,enctype) <- generateFormPost formUser
     mensa <- getMessage
     defaultLayout $ do 
         [whamlet|
@@ -30,16 +32,15 @@ getUsuarioR = do
                 <input type="submit" value="Cadastrar">
         |]
 
-postUsuarioR :: Handler Html
-postUsuarioR = do 
-    ((resultado,_),_) <- runFormPost formUsuario
+postUserR :: Handler Html
+postUserR = do 
+    ((resultado,_),_) <- runFormPost formUser
     case resultado of 
         FormSuccess usr -> do 
             _ <- runDB $ insert usr
             setMessage [shamlet|
                 <div> 
-                    Usuario com sucesso!
+                    Cadastro realizado com sucess!
             |]
             redirect UserR
         _ -> redirect HomeR
--}
