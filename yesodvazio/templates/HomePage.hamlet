@@ -5,7 +5,7 @@ $doctype 5
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Haskell Chan
         
-        <link rel="stylesheet" type="text/css" href=@{StaticR css_bootstrap_css}>
+        <link rel="stylesheet" type="text/css" href=@{StaticR css_bootstrap_min_css}>
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <body style="overflow-x: 'hidden'">
         <nav class="navbar navbar-dark bg-dark">

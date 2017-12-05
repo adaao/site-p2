@@ -45,3 +45,7 @@ button a:hover {
 button a:active {
     color: white;
 }
+
+footer {
+    margin-top: 2rem;
+}

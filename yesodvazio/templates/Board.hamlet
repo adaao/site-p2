@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Haskell Chan
+
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <link rel="stylesheet" href=@{StaticR css_bootstrap_min_css}>
+        <link rel="stylesheet" href=@{StaticR css_board_css}>
+        <link rel="stylesheet" href=@{StaticR css_simplesidebar_css}>
+    <body>
+        <div id="wrapper" class="toggled">
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand menu-title">
+                        <a href="homepage.html">Haskell Chan
+                    <li class="text-center menu-item">
+                        <a>/hs/
+                    <li class="text-center menu-item">
+                        <a>/rb/
+                    <li class="text-center menu-item">
+                        <a>/py/
+                    <li class="text-center menu-item">
+                        <a>/spl/
+                    <li class="text-center menu-item">
+                        <a>/cbl/
+                    <li class="text-center menu-item">
+                        <a>/java/
+                    <li class="text-center menu-item">
+                        <a>/cs/
+                    <li class="text-center menu-item">
+                        <a>/js/
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="col-lg-12 board-info">
+                        <img src=@{StaticR img_logo_png} class="board-image mx-auto d-block">
+                        <h1 class="text-center board-title">/hs/ - Haskell
+                    <form method="post" class="text-center" style="border-bottom: 1px solid black; padding-top: 1rem; margin-bottom: 1rem">
+                        <div class="form-group row">
+                            <label class="col-lg-1 offset-lg-1 col-form-label" for="threadTitle" style="font-weight: bold">Assunto
+                            <div class="col-lg-9">
+                                <input type="text" name="threadTitle" class="form-control" placeholder="Digite o título da thread...">
+                        <div class="form-group row">
+                            <label class="col-lg-1 offset-lg-1 col-form-label" for="reply" style="font-weight: bold">Conteúdo
+                            <div class="col-lg-9">
+                                <textarea name="reply" class="form-control" rows="5" placeholder="Digite o conteúdo...">
+                        <div class="form-group row offset-lg-10">
+                            <button type="submit" class="btn btn-success" style="margin-left: 1.2rem">Criar thread
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="float-left">#0
+                                <span class="float-right">00/00/0000
+                            <div class="card-body">
+                                <h4 class="card-title">Título da Thread
+                                <h6 class="card-subtitle mb-2 text-muted">Autor
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo esse a, beatae mollitia tenetur placeat et laboriosam explicabo possimus a...
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-danger float-left">Apagar
+                                <button type="button" class="btn btn-primary float-right">
+                                    <a href="thread.html">Abrir
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="float-left">#0
+                                <span class="float-right">00/00/0000
+                            <div class="card-body">
+                                <h4 class="card-title">Título da Thread
+                                <h6 class="card-subtitle mb-2 text-muted">Autor
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo esse a, beatae mollitia tenetur placeat et laboriosam explicabo possimus a...
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-danger float-left">Apagar
+                                <button type="button" class="btn btn-primary float-right">
+                                    <a href="thread.html">Abrir
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="float-left">#0
+                                <span class="float-right">00/00/0000
+                            <div class="card-body">
+                                <h4 class="card-title">Título da Thread
+                                <h6 class="card-subtitle mb-2 text-muted">Autor
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo esse a, beatae mollitia tenetur placeat et laboriosam explicabo possimus a...
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-danger float-left">Apagar
+                                <button type="button" class="btn btn-primary float-right">
+                                    <a href="thread.html">Abrir
+                <footer class="col-lg-12">
+                    <div class="text-center">
+                        <p class="text-muted">Copyright &copy; 2017
+        <script src=@{StaticR js_jquery_min_js}>
+        <script src=@{StaticR js_bootstrap_bundle_min_js}>
