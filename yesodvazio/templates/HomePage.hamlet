@@ -41,7 +41,7 @@ $doctype 5
                         <div class="card">
                             <div class="card-header">Cadastrar
                             <div class="card-body">
-                                <form action=@{HomeR} method="post">
+                                <form action=@{CreateUserR} method="post">
                                     <div class="form-group">
                                         <label for="username">Nome de Usuário
                                         <input type="text" id="username" class="form-control" placeholder="Nome de Usuário">

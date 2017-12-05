@@ -16,7 +16,12 @@ user/createUser                CreateUserR   POST
 user/readUser/#UserId/read     ReadUserR     GET
 user/updateUser/#UserId/update UpdateUserR   PUT
 
-userCategory/readUserTypeList  ListUserTypeR GET
+userCategory/listUSerType/list                         ListUserTypeR       GET
+userCategory/createUserCategory/create                 CreateUserCategoryR POST
+userCategory/readUserCategory/#UserCategoryId/read     ReadUserCategoryR   GET
+userCategory/updateUserCategory/#UserCategoryId/update UpdateUserCategoryR PUT
+
+
 
 
 
