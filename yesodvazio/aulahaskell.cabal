@@ -73,8 +73,8 @@ library
       Handler.Login
       Handler.Publication
       Handler.Reply
-      Handler.User
       Handler.UserCategory
+      Handler.Users
       Import
       Import.NoFoundation
       Model

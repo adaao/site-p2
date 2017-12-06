@@ -41,15 +41,44 @@ $doctype 5
                         <div class="card">
                             <div class="card-header">Cadastrar
                             <div class="card-body">
-                                <form action=@{CreateUserR} method="post">
+                                <form id="cadastrar" enctype="application/json" action=@{CreateUserR} method="post">
                                     <div class="form-group">
-                                        <label for="username">Nome de Usuário
-                                        <input type="text" id="username" class="form-control" placeholder="Nome de Usuário">
+                                        <label for="cd_nickName">Nome de Usuário
+                                        <input type="text" name="cd_nickName" class="form-control" placeholder="Nome de Usuário">
                                     <div class="form-group">
-                                        <label for="password">Senha
-                                        <input type="password" id="password" class="form-control" placeholder="Senha">
-                                    <button type="submit" class="btn btn-primary float-right">Cadastrar
+                                        <label for="cd_email">Email
+                                        <input type="text" name="cd_email" class="form-control" placeholder="Email">
+                                    <div class="form-group">
+                                        <label for="cd_password">Senha
+                                        <input type="password" name="cd_password" class="form-control" placeholder="Senha">
+                                    <input type="hidden" name="userCategoryId" value="0"/>
+                                    <button id="sendCadastro" type="button" class="btn btn-primary float-right">Cadastrar
 
         <footer style="margin-top: 2rem">
             <div class="container text-center">
                 <p class="text-muted">Copyright &copy; 2017
+        <script src=@{StaticR js_jquery_min_js}>
+        <script type="text/javascript">
+             \$(document).ready(function(){
+                \$("#sendCadastro").click(function (e) {
+                    var form = $("#cadastrar");
+                    var usersObj = {}; 
+                    var serializedForm = form.serializeArray();
+                    serializedForm.map(ipt => usersObj[ipt.name.replace("cd_", "")] = ipt.value);
+                    usersObj["userCategoryId"] = Number(usersObj["userCategoryId"]);
+                    \$.ajax({
+                        type : 'POST',
+                        url: form.attr("action"),
+                        dataType: "json",
+                        data : JSON.stringify(usersObj),
+                        contentType : "application/json",
+                        success: function() {
+                            alert("Cadastro efetuado com sucesso!");
+                            location.reload();
+                        },
+                        error: function() {
+                            alert("Erro ao realizar cadastro!");
+                        }
+                    });
+                });
+            });

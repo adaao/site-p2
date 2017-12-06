@@ -1,7 +1,7 @@
 UserCategory json
   userType Text
   
-User json
+Users json
   email Text
   nickName Text
   password Text
@@ -10,17 +10,21 @@ User json
   deriving Show
 
 Board json
-  boardName Text
-
+  name  String
+  sigla String
+  
 Publication json
   boardid BoardId
-  userid UserId
+  userid UsersId
   content Text
+  title Text
+  publicationdate UTCTime
 
 Reply json
   publicationid PublicationId
-  userid UserId
-  content Text  
+  userid UsersId
+  content Text
+  replyDate UTCTime
 
 
  -- By default this file is used in Model.hs (which is imported by Foundation.hs)

@@ -28,9 +28,9 @@ getLogarR = do
                 <input type="submit" value="Login">
         |]
 
-autentica :: Text -> Text -> HandlerT App IO (Maybe (Entity User))
-autentica email senha = runDB $ selectFirst [UserEmail ==. email
-                                            ,UserPassword ==. senha] []
+autentica :: Text -> Text -> HandlerT App IO (Maybe (Entity Users))
+autentica email senha = runDB $ selectFirst [UsersEmail ==. email
+                                            ,UsersPassword ==. senha] []
                                             
 postLogarR :: Handler Html
 postLogarR = do 
@@ -49,7 +49,7 @@ postLogarR = do
                     |]
                     redirect LogarR
                 Just (Entity _ usr) -> do 
-                    setSession "_NOME" (userNickName usr)
+                    setSession "_NOME" (usersNickName usr)
                     redirect HomeR
             redirect UserR
         _ -> redirect HomeR
@@ -68,7 +68,7 @@ postLogSairR = do
                     |]
                     redirect HomeR
                 Just (Entity _ usr) -> do 
-                    setSession "_NOME" (userNickName usr)
+                    setSession "_NOME" (usersNickName usr)
                     redirect HomeR
             redirect HomeR
         _ -> redirect HomeR

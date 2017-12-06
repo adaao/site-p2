@@ -3,8 +3,7 @@ $doctype 5
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Thread #000 - Haskell Chan
-        
+        <title>Haskell Chan
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href=@{StaticR css_bootstrap_min_css}>
         <link rel="stylesheet" type="text/css" href=@{StaticR css_board_css}>
@@ -13,61 +12,51 @@ $doctype 5
     <body>
         <div id="wrapper" class="toggled">
             <div id="sidebar-wrapper">
-                <ul class="sidebar-nav">
-                    <li class="sidebar-brand menu-title">
-                        <a href="homepage.html">Haskell Chan
-                    <li class="text-center menu-item">
-                        <a>/hs/
-                    <li class="text-center menu-item">
-                        <a>/rb/
-                    <li class="text-center menu-item">
-                        <a>/py/
-                    <li class="text-center menu-item">
-                        <a>/spl/
-                    <li class="text-center menu-item">
-                        <a>/cbl/
-                    <li class="text-center menu-item">
-                        <a>/java/
-                    <li class="text-center menu-item">
-                        <a>/cs/
-                    <li class="text-center menu-item">
-                        <a>/js/
+                ^{sidebarWidget}
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <div class="col-lg-12 board-info">
                         <img src=@{StaticR img_logo_png} class="board-image mx-auto d-block">
-                        <h1 class="text-center board-title">/hs/ - Haskell
-
-                    <form class="text-center" style="border-bottom: 1px solid black">
+                        <h1 class="text-center board-title">/#{boardSigla bod}/ - #{boardName bod}
+                    <form enctype="application/json" id="newReply" method="post" action=@{CreateReplyR} class="text-center" style="border-bottom: 1px solid black">
+                        <input type="hidden" name="publicationid" value=#{fromSqlKey pid}/>
                         <div class="form-group row">
-                            <label class="col-lg-1 offset-lg-1 col-form-label" for="reply" style="font-weight: bold">Resposta
+                            <label class="col-lg-1 offset-lg-1 col-form-label" for="content" style="font-weight: bold">Resposta
                             <div class="col-lg-9">
-                                <textarea name="reply" class="form-control" rows="5" placeholder="Digite sua resposta...">
+                                <textarea name="content" class="form-control" rows="5" placeholder="Digite sua resposta...">
                         <div class="form-group row offset-lg-10">
-                            <button type="submit" class="btn btn-success" style="margin-left: 3.6rem">Responder
-                    <div class="posts">
-                        <div class="card w100 bg-light mb-3">
-                            <div class="card-header op-header">
-                                <span class="float-left">#0 - Título da Thread - Autor do post
-                                <span class="float-right">00/00/0000 00:00:00.000
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt illum, porro cum optio assumenda! In ea magnam, enim ipsum ad laudantium accusamus fugiat, dolor molestiae velit quas iste maiores repudiandae. Sunt incidunt atque delectus sed debitis ratione sint, voluptate labore asperiores veritatis nostrum laborum, officiis, temporibus. Maxime nam distinctio illum facere omnis ipsa odit, incidunt dolore rem qui? Sapiente, et! Labore rerum, adipisci iusto. Accusamus et vitae nulla consequatur temporibus quo aliquam, quae quis voluptatibus consectetur error totam, ipsum eius. Neque nostrum expedita nulla dolorem deleniti voluptatibus. Aut, neque, error!
-
-                        <div class="card w100">
-                            <div class="card-header">
-                                <span class="float-left">#0 - Título da Thread - Autor do post
-                                <span class="float-right">00/00/0000 00:00:00.000
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt illum, porro cum optio assumenda! In ea magnam, enim ipsum ad laudantium accusamus fugiat, dolor molestiae velit quas iste maiores repudiandae. Sunt incidunt atque delectus sed debitis ratione sint, voluptate labore asperiores veritatis nostrum laborum, officiis, temporibus. Maxime nam distinctio illum facere omnis ipsa odit, incidunt dolore rem qui? Sapiente, et! Labore rerum, adipisci iusto. Accusamus et vitae nulla consequatur temporibus quo aliquam, quae quis voluptatibus consectetur error totam, ipsum eius. Neque nostrum expedita nulla dolorem deleniti voluptatibus. Aut, neque, error!
-
-                        <div class="card w100">
-                            <div class="card-header">
-                                <span class="float-left">#0 - Título da Thread - Autor do post
-                                <span class="float-right">00/00/0000 00:00:00.000
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt illum, porro cum optio assumenda! In ea magnam, enim ipsum ad laudantium accusamus fugiat, dolor molestiae velit quas iste maiores repudiandae. Sunt incidunt atque delectus sed debitis ratione sint, voluptate labore asperiores veritatis nostrum laborum, officiis, temporibus. Maxime nam distinctio illum facere omnis ipsa odit, incidunt dolore rem qui? Sapiente, et! Labore rerum, adipisci iusto. Accusamus et vitae nulla consequatur temporibus quo aliquam, quae quis voluptatibus consectetur error totam, ipsum eius. Neque nostrum expedita nulla dolorem deleniti voluptatibus. Aut, neque, error!
+                            <button type="button" class="btn btn-success" style="margin-left: 1.8rem">Responder
+                    ^{getListReply pid pub}
                 <footer class="col-lg-12">
                     <div class="text-center">
                         <p class="text-muted">Copyright &copy; 2017
         <script src=@{StaticR js_jquery_min_js}>
         <script src=@{StaticR js_bootstrap_bundle_min_js}>
+        <script type="text/javascript">
+             \$(document).ready(function(){
+                \$("button[type=button]").click(function (e) {
+                    var form = $("#newReply");
+                    var replyObj = {}; 
+                    var serializedForm = form.serializeArray();
+                    serializedForm.map(ipt => replyObj[ipt.name] = ipt.value);
+                    replyObj["publicationid"] = Number(replyObj["publicationid"].replace("/", ""));
+                    replyObj["userid"] = 1;
+                    replyObj["replyDate"] = (new Date()).toJSON();
+
+                    \$.ajax({
+                        type : 'POST',
+                        url: form.attr("action"),
+                        dataType: "json",
+                        data : JSON.stringify(replyObj),
+                        contentType : "application/json",
+                        success: function(data) {
+                            alert("Resposta enviada com sucesso!");
+                            location.reload();
+                        },
+                        error: function(err) {
+                            alert("Erro ao enviar resposta!");
+                            console.log(err);
+                        }
+                    });
+                });
+            });

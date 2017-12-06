@@ -3,26 +3,21 @@
 /favicon.ico FaviconR GET
 /robots.txt RobotsR GET
 
-/                    HomeR               GET
+/                             HomeR                GET
+/login                        LogarR               GET POST
+/publication/#PublicationId   PublicationR         GET
+/users                        UserR                GET POST
+/users/createUser             CreateUserR          POST
+!/publication/create           CreatePublicationR   POST
+/userCategory/listUserType/list                         ListUserTypeR       GET
+/userCategory/createUserCategory/create                 CreateUserCategoryR POST
+/userCategory/readUserCategory/#UserCategoryId/read     ReadUserCategoryR   GET
+/userCategory/updateUserCategory/#UserCategoryId/update UpdateUserCategoryR PUT
 
-/board               BoardR              GET
+/board/create         CreateBoardR      POST
+/board/list           ListBoardsR       GET
+!/board/#String       BoardR            GET
 
-/publication         PublicationR        GET
+/reply/create             CreateReplyR POST
 
-/login               LogarR              GET POST
-
-/user                UserR               GET POST
-user/createUser                CreateUserR   POST
-user/readUser/#UserId/read     ReadUserR     GET
-user/updateUser/#UserId/update UpdateUserR   PUT
-
-userCategory/listUSerType/list                         ListUserTypeR       GET
-userCategory/createUserCategory/create                 CreateUserCategoryR POST
-userCategory/readUserCategory/#UserCategoryId/read     ReadUserCategoryR   GET
-userCategory/updateUserCategory/#UserCategoryId/update UpdateUserCategoryR PUT
-
-
-
-
-
-
+-- /users/readUser/#UsersId/read     ReadUserR     GET
