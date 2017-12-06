@@ -61,7 +61,6 @@ getListPublicationByBoardId bid = do
                         <h6 class="card-subtitle mb-2 text-muted">^{getUserNameByUsersId $ publicationUserid pub}
                         <p class="card-text">#{publicationContent pub}
                     <div class="card-footer">
-                        <button type="button" class="btn btn-danger float-left">Apagar
                         <button type="button" class="btn btn-primary float-right">
                             <a href=@{PublicationR pid}>Abrir
     |]

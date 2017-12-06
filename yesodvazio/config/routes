@@ -5,18 +5,22 @@
 
 /                             HomeR                GET
 /login                        LogarR               GET POST
-/publication/#PublicationId   PublicationR         GET
-/users                        UserR                GET POST
-/users/createUser             CreateUserR          POST
-!/publication/create           CreatePublicationR   POST
+
+/users                                                  UserR                GET POST
+/users/createUser                                       CreateUserR          POST
 /userCategory/listUserType/list                         ListUserTypeR       GET
 /userCategory/createUserCategory/create                 CreateUserCategoryR POST
 /userCategory/readUserCategory/#UserCategoryId/read     ReadUserCategoryR   GET
 /userCategory/updateUserCategory/#UserCategoryId/update UpdateUserCategoryR PUT
 
+
+
+/publication/#PublicationId   PublicationR         GET
+!/publication/create          CreatePublicationR   POST
+
 /board/create         CreateBoardR      POST
 /board/list           ListBoardsR       GET
-!/board/#String       BoardR            GET
+!/board/#Text       BoardR            GET
 
 /reply/create             CreateReplyR POST
 

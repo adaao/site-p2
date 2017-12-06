@@ -23,7 +23,7 @@ getLogarR = do
         [whamlet|
             $maybe msg <- mensa
                 ^{msg}
-            <form method=post>
+            <form action=@{LogarR} method=post>
                 ^{widget}
                 <input type="submit" value="Login">
         |]
@@ -37,7 +37,7 @@ postLogarR = do
     ((resultado,_),_) <- runFormPost formLogin
     case resultado of
         FormSuccess ("root@root.com","root") -> do 
-            setSession "_NOME" "admin"
+            setSession "admin" "_NOME" 
             redirect UserR
         FormSuccess (email,password) -> do 
             talvezUser <- autentica email password
@@ -49,10 +49,12 @@ postLogarR = do
                     |]
                     redirect LogarR
                 Just (Entity _ usr) -> do 
-                    setSession "_NOME" (usersNickName usr)
-                    redirect HomeR
-            redirect UserR
-        _ -> redirect HomeR
+                    setSession (usersNickName usr) "_NOME" 
+                    redirect $ BoardR "hs"
+            --redirect UserR
+        _ -> do
+            print "erro"
+            redirect HomeR
 
 postLogSairR :: Handler Html
 postLogSairR = do 
@@ -68,7 +70,7 @@ postLogSairR = do
                     |]
                     redirect HomeR
                 Just (Entity _ usr) -> do 
-                    setSession "_NOME" (usersNickName usr)
+                    deleteSession (usersNickName usr)
                     redirect HomeR
             redirect HomeR
         _ -> redirect HomeR

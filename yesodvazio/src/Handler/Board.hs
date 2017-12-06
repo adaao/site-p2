@@ -11,7 +11,7 @@ import Handler.Publication
 import Network.HTTP.Types.Status
 import Database.Persist.Postgresql
 
-getBoardR :: String -> Handler Html
+getBoardR :: Text -> Handler Html
 getBoardR sigla = do
   bdata <- runDB $ selectFirst [ BoardSigla ==. sigla ] []
   case bdata of

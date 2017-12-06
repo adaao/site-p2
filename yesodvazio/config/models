@@ -10,15 +10,15 @@ Users json
   deriving Show
 
 Board json
-  name  String
-  sigla String
+  name  Text
+  sigla Text
   
 Publication json
   boardid BoardId
   userid UsersId
   content Text
   title Text
-  publicationdate UTCTime
+  publicationdate UTCTime 
 
 Reply json
   publicationid PublicationId
