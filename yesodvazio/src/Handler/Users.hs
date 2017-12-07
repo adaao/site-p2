@@ -4,7 +4,7 @@
 {-# LANGUAGE QuasiQuotes #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE TypeFamilies #-}
-
+-- este arquivo vai ser onde congigura os usuarios
 module Handler.Users where
 
 import Import
