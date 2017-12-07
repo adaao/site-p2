@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-03 21:07:33.586717 UTC
+2017-12-06 20:44:33.040936 UTC
 
 interface aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Import.NoFoundation 8002
-  interface hash: 64674101aab0f8c912b04cc1fa60db55
-  ABI hash: 1c6e3638018a532798b64f20fec46d43
-  export-list hash: 027fce94ca112eb96fb010660af80fb5
+  interface hash: 2ab8b90a4a376f3290ca5795597d1cc1
+  ABI hash: 40c2fe97564db75a6a153dddc0b3c775
+  export-list hash: 15df4bcfdf4507b7f97c0ac46980f8f9
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 5e6e116e79fd7c2679f3688e577f5394
   sig of: Nothing
@@ -27,12 +27,16 @@ exports:
   Settings.widgetFile
   Settings.widgetFileSettings
   Settings.StaticFiles.css_board_css
-  Settings.StaticFiles.css_bootstrap_css
+  Settings.StaticFiles.css_bootstrap_min_css
   Settings.StaticFiles.css_simplesidebar_css
+  Settings.StaticFiles.css_thread_css
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_svg
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_ttf
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_woff
+  Settings.StaticFiles.img_logo_png
+  Settings.StaticFiles.js_bootstrap_bundle_min_js
+  Settings.StaticFiles.js_jquery_min_js
   Control.Applicative.optional
   Control.Concurrent.rtsSupportsBoundThreads
   Control.Monad.<=<
@@ -1517,16 +1521,16 @@ exports:
   Data.Aeson.Types.ToJSON.KeyValue|{Data.Aeson.Types.ToJSON..=}
   Data.Aeson.Types.ToJSON.ToJSON{Data.Aeson.Types.ToJSON.toEncoding Data.Aeson.Types.ToJSON.toEncodingList Data.Aeson.Types.ToJSON.toJSON Data.Aeson.Types.ToJSON.toJSONList}
   Control.Concurrent.Async.Async{asyncThreadId}
-  Model.Board{Model.Board boardBoardName}
+  Model.Board{Model.Board boardName boardSigla}
   Model.BoardId
-  Model.Publication{Model.Publication publicationBoardid publicationContent publicationUserid}
+  Model.Publication{Model.Publication publicationBoardid publicationContent publicationPublicationdate publicationTitle publicationUserid}
   Model.PublicationId
-  Model.Reply{Model.Reply replyContent replyPublicationid replyUserid}
+  Model.Reply{Model.Reply replyContent replyPublicationid replyReplyDate replyUserid}
   Model.ReplyId
-  Model.User{Model.User userEmail userNickName userPassword userUserTypeid}
   Model.UserCategory{Model.UserCategory userCategoryUserType}
   Model.UserCategoryId
-  Model.UserId
+  Model.Users{Model.Users usersEmail usersNickName usersPassword usersUserCategoryId}
+  Model.UsersId
   Settings.AppSettings{Settings.AppSettings appAnalytics appAuthDummyLogin appCopyright appDatabaseConf appDetailedRequestLogging appHost appIpFromHeader appMutableStatic appPort appReloadTemplates appRoot appShouldLogAll appSkipCombining appStaticDir}
   Control.Arrow.Arrow|{Control.Arrow.&&& Control.Arrow.***}
   Control.Category.Category|{Control.Category.. Control.Category.id}
@@ -1729,9 +1733,9 @@ exports:
   Database.Persist.Class.PersistEntity.BackendSpecificFilter
   Database.Persist.Class.PersistEntity.BackendSpecificUpdate
   Database.Persist.Class.PersistEntity.Entity{Database.Persist.Class.PersistEntity.Entity entityKey entityVal}
-  Database.Persist.Class.PersistEntity.EntityField|{Model.BoardBoardName Model.BoardId Model.PublicationBoardid Model.PublicationContent Model.PublicationId Model.PublicationUserid Model.ReplyContent Model.ReplyId Model.ReplyPublicationid Model.ReplyUserid Model.UserCategoryId Model.UserCategoryUserType Model.UserEmail Model.UserId Model.UserNickName Model.UserPassword Model.UserUserTypeid}
+  Database.Persist.Class.PersistEntity.EntityField|{Model.BoardId Model.BoardName Model.BoardSigla Model.PublicationBoardid Model.PublicationContent Model.PublicationId Model.PublicationPublicationdate Model.PublicationTitle Model.PublicationUserid Model.ReplyContent Model.ReplyId Model.ReplyPublicationid Model.ReplyReplyDate Model.ReplyUserid Model.UserCategoryId Model.UserCategoryUserType Model.UsersEmail Model.UsersId Model.UsersNickName Model.UsersPassword Model.UsersUserCategoryId}
   Database.Persist.Class.PersistEntity.Filter{Database.Persist.Class.PersistEntity.BackendFilter Database.Persist.Class.PersistEntity.Filter Database.Persist.Class.PersistEntity.FilterAnd Database.Persist.Class.PersistEntity.FilterOr filterField filterFilter filterValue}
-  Database.Persist.Class.PersistEntity.Key|{Model.BoardKey Model.PublicationKey Model.ReplyKey Model.UserCategoryKey Model.UserKey unBoardKey unPublicationKey unReplyKey unUserCategoryKey unUserKey}
+  Database.Persist.Class.PersistEntity.Key|{Model.BoardKey Model.PublicationKey Model.ReplyKey Model.UserCategoryKey Model.UsersKey unBoardKey unPublicationKey unReplyKey unUserCategoryKey unUsersKey}
   Database.Persist.Class.PersistEntity.PersistEntity{Database.Persist.Class.PersistEntity.EntityField Database.Persist.Class.PersistEntity.Key Database.Persist.Class.PersistEntity.PersistEntityBackend Database.Persist.Class.PersistEntity.Unique Database.Persist.Class.PersistEntity.entityDef Database.Persist.Class.PersistEntity.fieldLens Database.Persist.Class.PersistEntity.fromPersistValues Database.Persist.Class.PersistEntity.keyFromValues Database.Persist.Class.PersistEntity.keyToValues Database.Persist.Class.PersistEntity.persistFieldDef Database.Persist.Class.PersistEntity.persistIdField Database.Persist.Class.PersistEntity.persistUniqueKeys Database.Persist.Class.PersistEntity.persistUniqueToFieldNames Database.Persist.Class.PersistEntity.persistUniqueToValues Database.Persist.Class.PersistEntity.toPersistFields}
   Database.Persist.Class.PersistEntity.SelectOpt{Database.Persist.Class.PersistEntity.Asc Database.Persist.Class.PersistEntity.Desc Database.Persist.Class.PersistEntity.LimitTo Database.Persist.Class.PersistEntity.OffsetBy}
   Database.Persist.Class.PersistEntity.Unique|{Model.UniqueEmail}
@@ -2245,64 +2249,72 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.FromJSON f70746c5b1cd1a03ee098f0728e87383
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Model 72a20d7ada686ebd9d047304786643a3
-  exports: 851337c1bf79c1dc674f1fd24ff30c20
-  Board e96a893b44bf0e0a9bbea035d0004de7
-  Board 3a42c82099cc1b9022b4870be760c2fb
-  BoardBoardName 5240a7e33bb93a6f0d315035684b6c49
-  BoardId ce4444fc97988f3b7f61e39adbb92cce
-  BoardId 1451e3ed38bfb72715067ac352fc20ab
-  BoardKey 41426207a82b8a19deaac01c5490d442
-  Publication 8581bb244e9685d7f1f660e35ac76ec8
-  Publication 753c7811a3fe1761ced2bd3142cb44c1
-  PublicationBoardid 814e777e841f70b0f3716727c29d88ac
-  PublicationContent 57fd0bd91883432a098fd64e89ecf5a9
-  PublicationId d36b18c838c99a23037c70ee3b5e3bfb
-  PublicationId 7f22643255e97104c3cc875fa7db90b8
-  PublicationKey 85b3add86933c5cfce5d641043626abe
-  PublicationUserid 9252c4ac1b227a3877806d0ee6f27e4f
-  Reply b759009ffc6866e11ec0dceb4ba5919f
-  Reply 2e2a2902c91eca9e18e6ab9bdb743f0f
-  ReplyContent ec9277a864030e6423080d81c6d956c4
-  ReplyId ef23123358eacd4368a1a5793818fc0c
-  ReplyId 7c2f70fafee1d7f16740dfe7b2aa78cb
-  ReplyKey 33b4544de40e8ce8eae67dbfb2e46e29
-  ReplyPublicationid 85a204fd419f9d8ded7f2645cd4e013b
-  ReplyUserid f234cc8c61e1949a59d62c97ab0b8f44
-  UniqueEmail a2aaf230d700f217e07ad0e4d3ef9490
-  User dc644fdbf7a4f654cdbcc3549969ffc2
-  User a2e26a99a0a7e1f55b2d649c3164b5a1
-  UserCategory d050f25bd2468cb270edfec4f31c67ef
-  UserCategory a2073c6bf314352499f1c5b9798600ec
-  UserCategoryId 434d6b5ca6632c12855a38f424746976
-  UserCategoryId b0af131d4f42685dfb83b1082ccc875b
-  UserCategoryKey cea94797ab1e42f7510d1b33214650ce
-  UserCategoryUserType c4062508912957ecc286d83f73966bb3
-  UserEmail 322194bdfb7b42e297a9703afe4b44ee
-  UserId 37001e5903ce0194bf6ba0e1159aa77f
-  UserId b8623f52d3bc9e0ad54b8ffc23c52318
-  UserKey 19dd85e1fba75f9ff2d990fae11b1a3e
-  UserNickName 9e1a83afa72889854d460397fd5c061e
-  UserPassword dd8f24ff343aa148f6a60f868a6d57c9
-  UserUserTypeid ab148259f0f715ac2538941a478a8289
-  boardBoardName e8afa6d7688f5874b8244d3c4825431e
+import  -/  Model bf6b2cc11eb8f8c94f7a4e3a28630791
+  exports: 8d84997aa3207f974315d0910d8c98ea
+  Board 2ca7d9a2175866a2342bb7bafd689922
+  Board 7a080d88f61ac176df7511fb1dd6c104
+  BoardId 18dad164d8d2e2d22045df7f0a371746
+  BoardId a0e5ac50de212a14e2ab3c47130e191c
+  BoardKey 9780e680329546907a352e7d07e64855
+  BoardName ddc9c7dadf767c1186fcdccdae111515
+  BoardSigla d8faf130058006a2087d9b19d7eec426
+  Publication 5934c817fbb0696c01c1dbfff388a85a
+  Publication 85104f0f10bb655500033de890735a18
+  PublicationBoardid e364a233d1467833b1b2f7b40e13e103
+  PublicationContent 32cc5a2bfff1c82c51f3de4158da6f9e
+  PublicationId 0e455eba45edcb11404a1c49c7cdc99e
+  PublicationId 9a72edc11f02880e7907e2458be21d48
+  PublicationKey 0d5476b45fff2245f3842824cc389f5a
+  PublicationPublicationdate 3cbc7943684c58f580dd280c18e6c1cc
+  PublicationTitle a766828d5ad9c77457317f0bc4d53a31
+  PublicationUserid 8084ebec13e7c9bc66e8c44dc37cc90e
+  Reply 54937fa3031e48258e62c0055ee6703c
+  Reply f4c99192cb18e41ce80c10444a8cb941
+  ReplyContent b993ad5d1f5db4db1624f670a7833bb0
+  ReplyId ce58d81c4ee1ea979f18c851eb1d6bdc
+  ReplyId fce8c72206c4c4daa8281c90bbadfc05
+  ReplyKey 26e0905dfc6acb8d639b3f5774bb7154
+  ReplyPublicationid 33c1b89ffd6fb0890d8a4b28c3336e34
+  ReplyReplyDate 9dc1ec17a79afac442f44e3cedf1a82a
+  ReplyUserid b939bbd89795c0e0096517cc09d812b3
+  UniqueEmail d4bb394dd4dfcbb2080e7335f2a5b873
+  UserCategory 8d9bb26221b369afe2b758d12101074e
+  UserCategory 1ebbf84b6f8c01b0b2225781945420dd
+  UserCategoryId 073bd5c85017332eaa5ebb8627c8fbf0
+  UserCategoryId ae2e114d50038e64ef33046d4e39f23a
+  UserCategoryKey 2de040309c6e987ea0f574b6004e73d9
+  UserCategoryUserType 364cf731cff720e3905d59df875fe898
+  Users 466534fe8ea47777b30ccb2e57bd7c9d
+  Users 176ac10e41101ed485f29b02246eaccd
+  UsersEmail 890f6f2c4caa4904902d0d5db8249e93
+  UsersId 90ede5b3fac33482fe789707a07bbfc6
+  UsersId ced51e56ccc3002ba4781ed7bb0ca1cc
+  UsersKey f42ff024c95db38c1ffb7ce4ca5ae166
+  UsersNickName b68c4697ca628de4391f29e6383b128e
+  UsersPassword c2fc03aab3cabe6d7bb60a21adbd32d3
+  UsersUserCategoryId c055175f8749bbc3b7ef51146538ca00
+  boardName d6312e783ece61d9c3f9a8b7c0bf3225
+  boardSigla df2d156bf30f2dbc8d4814c0893ad95d
   migrateAll 2d22c9b5e42f7d4b1a40c10118230742
-  publicationBoardid 15298342d3ad543a44db5453bc5448dd
-  publicationContent 3a0c6380bdc3c75bb0a39372bbbbeb32
-  publicationUserid 575a5458ba080bb7522abe958cf3e154
-  replyContent 250411eefd92ff9ce2642975bd8ba4f4
-  replyPublicationid c83c4ff0853e87d6f7172443dfec4993
-  replyUserid 2ab44be830fd1a6168f5c865552c0caf
-  unBoardKey 3a42c82099cc1b9022b4870be760c2fb
-  unPublicationKey 753c7811a3fe1761ced2bd3142cb44c1
-  unReplyKey 2e2a2902c91eca9e18e6ab9bdb743f0f
-  unUserCategoryKey a2073c6bf314352499f1c5b9798600ec
-  unUserKey a2e26a99a0a7e1f55b2d649c3164b5a1
-  userCategoryUserType 009bb1d5813cb441c9d8214634d1c51a
-  userEmail 74362506cf137e4bbd5112129e095a56
-  userNickName ad53272de0a3d8536c409221a2d27f39
-  userPassword b1276289414e6c48617816edcd608b67
-  userUserTypeid e0b3fd553af674ba6d957347a6b1c5eb
+  publicationBoardid 6835ea6f269710fe45e8becc812f481d
+  publicationContent e9f16a875157ece0941abccc64f9b214
+  publicationPublicationdate ce223fb9c83fd7166dda23b319687308
+  publicationTitle 9bd9b0e259d193cbecc63781a3f4c121
+  publicationUserid a45894a42cf2b31345d9dd45f34300ba
+  replyContent cc3bd929df7383da362561ce377682aa
+  replyPublicationid 61811167d6170e7058a94a10e93bb81d
+  replyReplyDate aeebe085a234d68f09dbc5f357d6d7a4
+  replyUserid 2bffc6de3bdd76f12e0b79f85f9f836b
+  unBoardKey 7a080d88f61ac176df7511fb1dd6c104
+  unPublicationKey 85104f0f10bb655500033de890735a18
+  unReplyKey f4c99192cb18e41ce80c10444a8cb941
+  unUserCategoryKey 1ebbf84b6f8c01b0b2225781945420dd
+  unUsersKey 176ac10e41101ed485f29b02246eaccd
+  userCategoryUserType 8384f812c0169931fa0b001cf90a59ba
+  usersEmail b01ba3429b4877d83212d633a088c5ee
+  usersNickName c4ccb6126a3beac63c6ab7416203656e
+  usersPassword 7970039c71220213eb059c390575d76c
+  usersUserCategoryId 35e0684fff75462c05a3e6dd8a535e77
 import  -/  Settings fd9cd92ed3e9c57f6121e27358d62974
   exports: 7478b489d3618be90f736a5dbf5e5247
   AppSettings ab7f2d9abf36975528e3e3c2b8515991
@@ -2329,15 +2341,19 @@ import  -/  Settings fd9cd92ed3e9c57f6121e27358d62974
   configSettingsYmlValue f0727a190ea136efa53f3a2cfaaea291
   widgetFile f3071b10edb28cd1d16a99cb5f1af507
   widgetFileSettings 6233b25a8c00df1cf4c785321fba3714
-import  -/  Settings.StaticFiles e41ba72ac3719f0f571fadaefc8c5442
-  exports: 3a9ebe987c623ceb0d9a9fd9fe9694d7
-  css_board_css be905026816b1bfb4556cfcc880245f1
-  css_bootstrap_css 17840b9a84a829531deef52934d9b68e
-  css_simplesidebar_css 3df076a8e434a87556e3c0f1af6601ba
-  fonts_glyphicons_halflings_regular_eot 2adf03bd837c0433cc270dc21f174195
-  fonts_glyphicons_halflings_regular_svg 61a25edb18393ff8dc3ab9d70b7e5c5f
-  fonts_glyphicons_halflings_regular_ttf 6a727bced85b7d7ab004b46fac46167e
-  fonts_glyphicons_halflings_regular_woff 2c534986a25868f00de8f3a0647660c7
+import  -/  Settings.StaticFiles 8dff350f03e191808aaa32b3a38a71cd
+  exports: 5a777bcc6d5ecc2c6982585b10d27c6b
+  css_board_css 28c8f80af7e8fedd0c46c6118875680f
+  css_bootstrap_min_css c68bffe4127059b3511fec65066ecada
+  css_simplesidebar_css 353fb585647013f5c67c7be2114f14ab
+  css_thread_css ba5fadaafbb096c8921b71f7acd81878
+  fonts_glyphicons_halflings_regular_eot 3f08ac75c26e00d6b5d4b7c65b867723
+  fonts_glyphicons_halflings_regular_svg 308a8872a5d5dc84ed3ac03b8cfd0bc9
+  fonts_glyphicons_halflings_regular_ttf c6e313403af86c1da85845961842eff6
+  fonts_glyphicons_halflings_regular_woff 999c22a3e54fa4826df865ba3e816b1c
+  img_logo_png a69ccd95ba068001275d65a7f17436e9
+  js_bootstrap_bundle_min_js 54fc54550d9e4092612b7114e2e8a80c
+  js_jquery_min_js 5eba731342d4997e5e616ab125e749bd
 import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
 import  -/  base-4.9.1.0:Control.Category 74288f70105bf6db5ff51d18c3e2c349
 import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
@@ -2349,7 +2365,6 @@ import  -/  base-4.9.1.0:Data.Maybe d876c4ffe4b3c43755a781e8ad860d88
 import  -/  base-4.9.1.0:Data.Semigroup fc55c71ff629dcbd821309c310055959
 import  -/  base-4.9.1.0:Data.String b34df69c7b6358cd40a379c8a0a78dcf
 import  -/  base-4.9.1.0:Data.Traversable 556020d7cf3c4a34a774600512918a37
-import  -/  base-4.9.1.0:Data.Typeable.Internal 0e9bdefa4325a0112d8e73b5e1e1f85d
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
 import  -/  base-4.9.1.0:GHC.Conc.Sync 8d0a228e5fc4d8c110495066f4d52ea1
 import  -/  base-4.9.1.0:GHC.Enum 3811281f7b5f26da514529cf3ed44009
@@ -2414,17 +2429,12 @@ import  -/  primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.M
 import  -/  primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.MutVar 0d45f1c497d8105899d11b3601a0ead9
 import  -/  resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi:Control.Monad.Trans.Resource.Internal 50c93ad6ec81754501e8820a059dce55
 import  -/  resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi:Data.Acquire.Internal 03aadd6eb41ed38f345bda80017b4879
-import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Cassius 336688e62a6613d225f432045a927247
-import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Hamlet f0191913c7fb82d3b277f10e3ea32aec
 import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Internal.Css 2aa6f780591bfd712650fe8f47808a33
-import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Julius 81cb4404bae7a131dc01b39b5d3323e6
-import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Lucius 74f23b1c009a9d1ee3c3fbc05df417e1
 import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Internal 9bfcbbbe07ecef48f631025a838df7da
 import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Days 0625fb086700e00eeabe68d7be3fc9e6
 import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian 04a8b2fb0c663c25de5cf9d7024d8458
 import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Clock.UTC a11128e40404d4167f29d45f57b1b0af
 import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse ca4fefe1846c5cb51836ffb85274a6e6
-import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Class 45530f1305724ee3931a9be21b40ca7e
 import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Reader 1b607a084a390ae0e50e8f8dcbf2541a
 import  -/  unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base 214d0e8bbe09552a4e9173f83388cb27
 import  -/  unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashSet fc979ee2b38aaa038af760db40c35f4a
@@ -2437,7 +2447,6 @@ import  -/  yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Aut
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Handler 5d1f9b8655f751a9604cc00d4dadf70f
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.LiteApp d01e2fff882fa984c802427df7212818
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types 0b39941269d824c929136a6524eb02b4
-import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Widget 869ea22c83fb6f57618c9b7917660192
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Routes.Class 1402a53c0596ce6914d771c3b52c0c4f
 import  -/  yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static e8f90c76bf5b168d668c933b381656c3
 addDependentFile "/home/ubuntu/.stack/programs/x86_64-linux/ghc-8.0.2/lib/ghc-8.0.2/include/ghcversion.h"

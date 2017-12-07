@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-03 21:07:14.975393 UTC
+2017-12-06 16:45:38.756928 UTC
 
 interface aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Settings.StaticFiles 8002
-  interface hash: d6e164b634968d7412f0f60ced1b40e2
-  ABI hash: e41ba72ac3719f0f571fadaefc8c5442
-  export-list hash: 3a9ebe987c623ceb0d9a9fd9fe9694d7
+  interface hash: f0fbe29344eb621322861640c4ce2bf5
+  ABI hash: 8dff350f03e191808aaa32b3a38a71cd
+  export-list hash: 5a777bcc6d5ecc2c6982585b10d27c6b
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: f91110660b9761c227295575e91cd3f7
   sig of: Nothing
@@ -13,12 +13,16 @@ interface aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Settings.StaticFiles 8002
   where
 exports:
   Settings.StaticFiles.css_board_css
-  Settings.StaticFiles.css_bootstrap_css
+  Settings.StaticFiles.css_bootstrap_min_css
   Settings.StaticFiles.css_simplesidebar_css
+  Settings.StaticFiles.css_thread_css
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_svg
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_ttf
   Settings.StaticFiles.fonts_glyphicons_halflings_regular_woff
+  Settings.StaticFiles.img_logo_png
+  Settings.StaticFiles.js_bootstrap_bundle_min_js
+  Settings.StaticFiles.js_jquery_min_js
 module dependencies: Settings
 package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
                       StateVar-1.1.0.4@StateVar-1.1.0.4-5dJbnTVECtEAhfJXPZKdbO
@@ -427,8 +431,96 @@ acdde2bc2313096294f57114ea8915a5
           Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
      Inline: [0] -}
+0a4b33dde7a9072ec98ec2b113ca782f
+  $wouter14 ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+7d75119adfaf0ff92209754c2b79c166
+  $wouter15 ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+c677e51292857577d992a7626b3288ab
+  $wouter16 ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+182e25fbe1153bffe7b3655f66bd048b
+  $wouter17 ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+935859374409983f203f3e33ae5574ec
+  $wouter18 ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+ca68de97fccd489d38cc123444c33340
+  $wouter19 ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
 e17dfe6a2bd2f92d5f92122e2452ad5a
   $wouter2 ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+c3debfb2bc99e5b971de2c790b179b39
+  $wouter20 ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+7d56edb776e03c63a1f04db40b0e3469
+  $wouter21 ::
     GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
     -> GHC.Prim.Int#
     -> [GHC.Types.Char]
@@ -515,14 +607,14 @@ d45e3102dd9685f6ec78591f19d43b93
           Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
      Inline: [0] -}
-be905026816b1bfb4556cfcc880245f1
+28c8f80af7e8fedd0c46c6118875680f
   css_board_css :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Settings.StaticFiles.css_board_css1
                   `cast`
                 (Sym (Yesod.Static.D:R:RouteStatic0[0])) -}
-b7eba709cac5253bd8ea8feef9348f5a
+99629acaea075a681b1dcbfcf5497880
   css_board_css1 :: Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
@@ -559,7 +651,7 @@ a79092d218a59fcee318b28cb49bd478
 5b2a6ca4831c01c69475398eebcb8e6d
   css_board_css13 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "css"#) -}
-4755b59d353e2689d0735545516d05f5
+d0b9839de06ae7a6a6192f64040a142d
   css_board_css2 ::
     [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
   {- Strictness: m2,
@@ -568,15 +660,15 @@ a79092d218a59fcee318b28cb49bd478
                    Settings.StaticFiles.css_board_css3
                    (GHC.Types.[]
                       @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-d595acf01193da66f8265be42c452415
+24c00d76865565a8645d77cdd64bc221
   css_board_css3 ::
     (Data.Text.Internal.Text, Data.Text.Internal.Text)
   {- Strictness: m,
      Unfolding: ((Settings.StaticFiles.css_board_css5,
                   Settings.StaticFiles.css_board_css4)) -}
-cb18b6fc5ddb9c401b4a41ccd96f6bce
+8edb7a390c3640af9fa96604407441a7
   css_board_css4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "oyp8FKSL"#) -}
+  {- Unfolding: (Data.Text.Show.unpackCString# "7FUQIgwZ"#) -}
 4a3fcb1985f698b1b81c38d451b449b8
   css_board_css5 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "etag"#) -}
@@ -619,28 +711,28 @@ f9067287ddc835d9ff6be03711bdc812
                    Settings.StaticFiles.css_board_css10
                    0#
                    ipv }) -}
-17840b9a84a829531deef52934d9b68e
-  css_bootstrap_css :: Yesod.Static.StaticRoute
+c68bffe4127059b3511fec65066ecada
+  css_bootstrap_min_css :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
-                Settings.StaticFiles.css_bootstrap_css1
+                Settings.StaticFiles.css_bootstrap_min_css1
                   `cast`
                 (Sym (Yesod.Static.D:R:RouteStatic0[0])) -}
-df6a37a302960f3e89af9121d0b68aee
-  css_bootstrap_css1 :: Yesod.Static.R:RouteStatic
+90c47f3f137dfd3ee108f947481374f4
+  css_bootstrap_min_css1 :: Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
-                   Settings.StaticFiles.css_bootstrap_css5
-                   Settings.StaticFiles.css_bootstrap_css2) -}
-ade3468fe1b62f6390b85ef55b8262d6
-  css_bootstrap_css10 :: Data.Text.Internal.Text
+                   Settings.StaticFiles.css_bootstrap_min_css5
+                   Settings.StaticFiles.css_bootstrap_min_css2) -}
+bb72760cf1112b33758c259334c60fc9
+  css_bootstrap_min_css10 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
-                        Settings.StaticFiles.css_bootstrap_css11 of ds1 { (#,#) ipv ipv1 ->
+                        Settings.StaticFiles.css_bootstrap_min_css11 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-e128450e56b362cb1b29bb5052dbaad9
-  css_bootstrap_css11 ::
+9348644f6fc08c167b2b86a46450fc12
+  css_bootstrap_min_css11 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           Data.Text.Internal.Text #)
@@ -657,47 +749,47 @@ e128450e56b362cb1b29bb5052dbaad9
                    Settings.StaticFiles.css_board_css13
                    0#
                    ipv }) -}
-5eb8adff57d5140d5865ea8ba5aad2c4
-  css_bootstrap_css2 ::
+08a948b7778fd8a9c550dfd77445659b
+  css_bootstrap_min_css2 ::
     [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   Settings.StaticFiles.css_bootstrap_css3
+                   Settings.StaticFiles.css_bootstrap_min_css3
                    (GHC.Types.[]
                       @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-338b0d94e01aa5baa020e7eb88c2bcc7
-  css_bootstrap_css3 ::
+0c2b874df6134897a33cf6c142c1006d
+  css_bootstrap_min_css3 ::
     (Data.Text.Internal.Text, Data.Text.Internal.Text)
   {- Strictness: m,
      Unfolding: ((Settings.StaticFiles.css_board_css5,
-                  Settings.StaticFiles.css_bootstrap_css4)) -}
-baf2357f34e86329283a59941956124a
-  css_bootstrap_css4 :: Data.Text.Internal.Text
+                  Settings.StaticFiles.css_bootstrap_min_css4)) -}
+80ccffdb02a6f75a5c80279900fbfab6
+  css_bootstrap_min_css4 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "ld9yank2"#) -}
-a6c98e0025a514424e835411dea1d94c
-  css_bootstrap_css5 :: [Data.Text.Internal.Text]
+750d7529e81c5a4173aa5c920420cd77
+  css_bootstrap_min_css5 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
-                   Settings.StaticFiles.css_bootstrap_css10
-                   Settings.StaticFiles.css_bootstrap_css6) -}
-107c5979fd2c8f578384b17afabcd39b
-  css_bootstrap_css6 :: [Data.Text.Internal.Text]
+                   Settings.StaticFiles.css_bootstrap_min_css10
+                   Settings.StaticFiles.css_bootstrap_min_css6) -}
+eaf0d513137256704db13aeab40ec4ce
+  css_bootstrap_min_css6 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
-                   Settings.StaticFiles.css_bootstrap_css7
+                   Settings.StaticFiles.css_bootstrap_min_css7
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-821916b74f85ec1a80a1cfb4a1c85ba7
-  css_bootstrap_css7 :: Data.Text.Internal.Text
+fd4d756fcb626588db638a03442c1e79
+  css_bootstrap_min_css7 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
-                        Settings.StaticFiles.css_bootstrap_css8 of ds1 { (#,#) ipv ipv1 ->
+                        Settings.StaticFiles.css_bootstrap_min_css8 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-001acc6ff1ba5b1433105b1e7b0ca9ac
-  css_bootstrap_css8 ::
+501c5d1d7ac70ec58ac36a370f71f3a3
+  css_bootstrap_min_css8 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           Data.Text.Internal.Text #)
@@ -711,20 +803,20 @@ a6c98e0025a514424e835411dea1d94c
                  Settings.StaticFiles.$wouter2
                    ipv1
                    4#
-                   Settings.StaticFiles.css_bootstrap_css9
+                   Settings.StaticFiles.css_bootstrap_min_css9
                    0#
                    ipv }) -}
-4172e3225579caf4ab920a9165b6a136
-  css_bootstrap_css9 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "bootstrap.css"#) -}
-3df076a8e434a87556e3c0f1af6601ba
+d490e8ef335e9983c20fce05ec64c184
+  css_bootstrap_min_css9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "bootstrap.min.css"#) -}
+353fb585647013f5c67c7be2114f14ab
   css_simplesidebar_css :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Settings.StaticFiles.css_simplesidebar_css1
                   `cast`
                 (Sym (Yesod.Static.D:R:RouteStatic0[0])) -}
-6fdc599f70049ae6beaf50d66e0cd35f
+a82199d4d66b889cabf8f9b9a7b1375e
   css_simplesidebar_css1 :: Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
@@ -755,7 +847,7 @@ fba27435898ad70eeed4627e41f39d6f
                    Settings.StaticFiles.css_board_css13
                    0#
                    ipv }) -}
-942c80703a01e7a08222668ba890f45b
+b581100df79ddc3942f81d539229943a
   css_simplesidebar_css2 ::
     [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
   {- Strictness: m2,
@@ -764,15 +856,15 @@ fba27435898ad70eeed4627e41f39d6f
                    Settings.StaticFiles.css_simplesidebar_css3
                    (GHC.Types.[]
                       @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-0af44628272e88fdf8150e27c319f1af
+626de66be229a33633a61f03bcd008d3
   css_simplesidebar_css3 ::
     (Data.Text.Internal.Text, Data.Text.Internal.Text)
   {- Strictness: m,
      Unfolding: ((Settings.StaticFiles.css_board_css5,
                   Settings.StaticFiles.css_simplesidebar_css4)) -}
-00c2d2e52fbb49d3ce966488fb79441c
+0bf1589d88309a13b09b749b754aeac8
   css_simplesidebar_css4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "WNWFhWpz"#) -}
+  {- Unfolding: (Data.Text.Show.unpackCString# "v3-K-M_6"#) -}
 f38f7218b51ef9bcbb975aab17f99cec
   css_simplesidebar_css5 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
@@ -815,29 +907,28 @@ e2b90d48809e1f8aa31fb5eff5a2c430
 c0c4a4d3c29d2135445d94de43ee1371
   css_simplesidebar_css9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "simplesidebar.css"#) -}
-2adf03bd837c0433cc270dc21f174195
-  fonts_glyphicons_halflings_regular_eot :: Yesod.Static.StaticRoute
+ba5fadaafbb096c8921b71f7acd81878
+  css_thread_css :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
-                Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot1
+                Settings.StaticFiles.css_thread_css1
                   `cast`
                 (Sym (Yesod.Static.D:R:RouteStatic0[0])) -}
-6d758d248c2de9f9558a8de53f26c77c
-  fonts_glyphicons_halflings_regular_eot1 ::
-    Yesod.Static.R:RouteStatic
+2dbee1d2e982ce1062ba3469083938f6
+  css_thread_css1 :: Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
-                   Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot5
-                   Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot2) -}
-488791cbdfb09c2496235e8177cd42df
-  fonts_glyphicons_halflings_regular_eot10 :: Data.Text.Internal.Text
+                   Settings.StaticFiles.css_thread_css5
+                   Settings.StaticFiles.css_thread_css2) -}
+d4ec8ce216feca55a2c5235765083488
+  css_thread_css10 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
-                        Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot11 of ds1 { (#,#) ipv ipv1 ->
+                        Settings.StaticFiles.css_thread_css11 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-08dc84462237af79aa7ea2c24644910c
-  fonts_glyphicons_halflings_regular_eot11 ::
+04bd6d1634842a21a4325ebbe61d219d
+  css_thread_css11 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           Data.Text.Internal.Text #)
@@ -849,6 +940,105 @@ c0c4a4d3c29d2135445d94de43ee1371
                         10#
                         s1 of ds1 { (#,#) ipv ipv1 ->
                  Settings.StaticFiles.$wouter7
+                   ipv1
+                   4#
+                   Settings.StaticFiles.css_board_css13
+                   0#
+                   ipv }) -}
+7afb881b2b81c6fbe5f3140186af657e
+  css_thread_css2 ::
+    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                   Settings.StaticFiles.css_thread_css3
+                   (GHC.Types.[]
+                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
+470dcb8b25aade09e990cd59a12ef493
+  css_thread_css3 ::
+    (Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Strictness: m,
+     Unfolding: ((Settings.StaticFiles.css_board_css5,
+                  Settings.StaticFiles.css_thread_css4)) -}
+f9be5c197cfe1ef832bc8d96b54e6a37
+  css_thread_css4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "J-H4quya"#) -}
+f95089e6deced40d045a243633b9c611
+  css_thread_css5 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Settings.StaticFiles.css_thread_css10
+                   Settings.StaticFiles.css_thread_css6) -}
+604564c383550b1c75269e7e4b125dae
+  css_thread_css6 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Settings.StaticFiles.css_thread_css7
+                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
+1ada85683c123f6e87c93d2df23e2afd
+  css_thread_css7 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Data.Text.Internal.Text
+                        Settings.StaticFiles.css_thread_css8 of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+0ba1eaad249e7fef643f24c46ffae588
+  css_thread_css8 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv ipv1 ->
+                 Settings.StaticFiles.$wouter6
+                   ipv1
+                   4#
+                   Settings.StaticFiles.css_thread_css9
+                   0#
+                   ipv }) -}
+92062e6ab96d39296df22c624a87a9e5
+  css_thread_css9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "thread.css"#) -}
+3f08ac75c26e00d6b5d4b7c65b867723
+  fonts_glyphicons_halflings_regular_eot :: Yesod.Static.StaticRoute
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot1
+                  `cast`
+                (Sym (Yesod.Static.D:R:RouteStatic0[0])) -}
+fe4d2fe46b9d4e549733c57cec953e71
+  fonts_glyphicons_halflings_regular_eot1 ::
+    Yesod.Static.R:RouteStatic
+  {- Strictness: m,
+     Unfolding: (Yesod.Static.StaticRoute
+                   Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot5
+                   Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot2) -}
+085908d0e12472fbc6b8b6b1784a1b82
+  fonts_glyphicons_halflings_regular_eot10 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Data.Text.Internal.Text
+                        Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot11 of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+7375894026ee92b2beefbd20753716de
+  fonts_glyphicons_halflings_regular_eot11 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv ipv1 ->
+                 Settings.StaticFiles.$wouter9
                    ipv1
                    4#
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot12
@@ -875,7 +1065,7 @@ c6187e176b7567a8ea201ea2eeac786c
 1db13a6c1b9066df01ef453d5a6818ce
   fonts_glyphicons_halflings_regular_eot4 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "etF8YIXe"#) -}
-f0f527e1527944fa41b7b3371117b530
+c2e9b317228c4b4263075c4b39338dac
   fonts_glyphicons_halflings_regular_eot5 ::
     [Data.Text.Internal.Text]
   {- Strictness: m2,
@@ -883,7 +1073,7 @@ f0f527e1527944fa41b7b3371117b530
                    @ Data.Text.Internal.Text
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot10
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot6) -}
-88fae23a5860510b2bc8bd17d28cf120
+7dac4109f2c12177fcd90e9bbb822828
   fonts_glyphicons_halflings_regular_eot6 ::
     [Data.Text.Internal.Text]
   {- Strictness: m2,
@@ -891,14 +1081,14 @@ f0f527e1527944fa41b7b3371117b530
                    @ Data.Text.Internal.Text
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot7
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-63dd3b754d4b2f057e802ce969119266
+0827d8c4bbc30ca7b18bbfc003d9b1bd
   fonts_glyphicons_halflings_regular_eot7 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
                         Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot8 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-fdef101c3d5fdde8a0e70f1678d4f4be
+d8e036bb298937af1f66b181b2f3e84c
   fonts_glyphicons_halflings_regular_eot8 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -910,7 +1100,7 @@ fdef101c3d5fdde8a0e70f1678d4f4be
                         @ GHC.Prim.RealWorld
                         10#
                         s1 of ds1 { (#,#) ipv ipv1 ->
-                 Settings.StaticFiles.$wouter6
+                 Settings.StaticFiles.$wouter8
                    ipv1
                    4#
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot9
@@ -920,28 +1110,28 @@ e7d6248d9f0ef2dc6664649852ba461e
   fonts_glyphicons_halflings_regular_eot9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "glyphicons-halflings-regular.eot"#) -}
-61a25edb18393ff8dc3ab9d70b7e5c5f
+308a8872a5d5dc84ed3ac03b8cfd0bc9
   fonts_glyphicons_halflings_regular_svg :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Settings.StaticFiles.fonts_glyphicons_halflings_regular_svg1
                   `cast`
                 (Sym (Yesod.Static.D:R:RouteStatic0[0])) -}
-ec42b809621fe119acf437e1eb19874f
+b922f91695d554766f59cea3cbd63a5c
   fonts_glyphicons_halflings_regular_svg1 ::
     Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_svg5
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_svg2) -}
-93d26e6be6e37da6966b7d713e378dcc
+3c1920da255784eda884d4846958a923
   fonts_glyphicons_halflings_regular_svg10 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
                         Settings.StaticFiles.fonts_glyphicons_halflings_regular_svg11 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-7b3c254575879d89354f22beea763814
+6f256f7a467598803674e126538f71ba
   fonts_glyphicons_halflings_regular_svg11 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -953,7 +1143,7 @@ ec42b809621fe119acf437e1eb19874f
                         @ GHC.Prim.RealWorld
                         10#
                         s1 of ds1 { (#,#) ipv ipv1 ->
-                 Settings.StaticFiles.$wouter9
+                 Settings.StaticFiles.$wouter11
                    ipv1
                    4#
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot12
@@ -977,7 +1167,7 @@ edc37cc020eb1fa19ae48ee409bf3b6c
 47ebb0f02c7c70b2ef18c1a4f967eb68
   fonts_glyphicons_halflings_regular_svg4 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "MpQdYzAE"#) -}
-63ef8fae6d1cb4fecc484a378673dee3
+f092376b680587853dcc4901ed3b6109
   fonts_glyphicons_halflings_regular_svg5 ::
     [Data.Text.Internal.Text]
   {- Strictness: m2,
@@ -985,7 +1175,7 @@ edc37cc020eb1fa19ae48ee409bf3b6c
                    @ Data.Text.Internal.Text
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_svg10
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_svg6) -}
-7a0f2695b6f69e62da6936127fe99ffa
+b6c801b72b0e2afdd4a89d9dc32c84c8
   fonts_glyphicons_halflings_regular_svg6 ::
     [Data.Text.Internal.Text]
   {- Strictness: m2,
@@ -993,14 +1183,14 @@ edc37cc020eb1fa19ae48ee409bf3b6c
                    @ Data.Text.Internal.Text
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_svg7
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-18580214a9f51846d632adaeac781660
+9d1a33ddfa4d5b6c83df78f6b011a997
   fonts_glyphicons_halflings_regular_svg7 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
                         Settings.StaticFiles.fonts_glyphicons_halflings_regular_svg8 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-1eb69b5f6c7845b07bdf98d678a36c77
+9aea7737ce7016aa680bb6d09c3240f7
   fonts_glyphicons_halflings_regular_svg8 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1012,7 +1202,7 @@ edc37cc020eb1fa19ae48ee409bf3b6c
                         @ GHC.Prim.RealWorld
                         10#
                         s1 of ds1 { (#,#) ipv ipv1 ->
-                 Settings.StaticFiles.$wouter8
+                 Settings.StaticFiles.$wouter10
                    ipv1
                    4#
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_svg9
@@ -1022,28 +1212,28 @@ c92ac4ed77475a7db6b762da97a9a2e8
   fonts_glyphicons_halflings_regular_svg9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "glyphicons-halflings-regular.svg"#) -}
-6a727bced85b7d7ab004b46fac46167e
+c6e313403af86c1da85845961842eff6
   fonts_glyphicons_halflings_regular_ttf :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Settings.StaticFiles.fonts_glyphicons_halflings_regular_ttf1
                   `cast`
                 (Sym (Yesod.Static.D:R:RouteStatic0[0])) -}
-ea8886d22ee46fed828155526a62564a
+55cc24d7fcf0bcf73a0c48b1c7100734
   fonts_glyphicons_halflings_regular_ttf1 ::
     Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_ttf5
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_ttf2) -}
-b5399ae8c8365ee9001daa3c53d4cb82
+55eee5d82ab6e5fb1f0a5899c5dcf556
   fonts_glyphicons_halflings_regular_ttf10 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
                         Settings.StaticFiles.fonts_glyphicons_halflings_regular_ttf11 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-17724beb39c0ce01e041f8de285280ae
+06044047e404c1ad9c8b58f0fa72c365
   fonts_glyphicons_halflings_regular_ttf11 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1055,7 +1245,7 @@ b5399ae8c8365ee9001daa3c53d4cb82
                         @ GHC.Prim.RealWorld
                         10#
                         s1 of ds1 { (#,#) ipv ipv1 ->
-                 Settings.StaticFiles.$wouter11
+                 Settings.StaticFiles.$wouter13
                    ipv1
                    4#
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot12
@@ -1079,7 +1269,7 @@ d7a329c37c0fc7e4bfdfa0d412252cc9
 f37b9873375a6bfc4c9046662aecdbbc
   fonts_glyphicons_halflings_regular_ttf4 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "5J1S50t2"#) -}
-5768869c03fe5b0688b63cd8ae8b01ed
+5de072c889309b1579fe91e558d72c92
   fonts_glyphicons_halflings_regular_ttf5 ::
     [Data.Text.Internal.Text]
   {- Strictness: m2,
@@ -1087,7 +1277,7 @@ f37b9873375a6bfc4c9046662aecdbbc
                    @ Data.Text.Internal.Text
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_ttf10
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_ttf6) -}
-d1d49a55af7185f101c8e9818b5208c5
+2a2ab2dcba2e876059d5e2b2d94dea23
   fonts_glyphicons_halflings_regular_ttf6 ::
     [Data.Text.Internal.Text]
   {- Strictness: m2,
@@ -1095,14 +1285,14 @@ d1d49a55af7185f101c8e9818b5208c5
                    @ Data.Text.Internal.Text
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_ttf7
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-a372c13f8d908379d635586a9bcad3a7
+cc67314f200b33e44939119d54533196
   fonts_glyphicons_halflings_regular_ttf7 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
                         Settings.StaticFiles.fonts_glyphicons_halflings_regular_ttf8 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-ac45145f7f463a27fd29d96306cdc09c
+2722572e05118857d86f72e4597b7418
   fonts_glyphicons_halflings_regular_ttf8 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1114,7 +1304,7 @@ ac45145f7f463a27fd29d96306cdc09c
                         @ GHC.Prim.RealWorld
                         10#
                         s1 of ds1 { (#,#) ipv ipv1 ->
-                 Settings.StaticFiles.$wouter10
+                 Settings.StaticFiles.$wouter12
                    ipv1
                    4#
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_ttf9
@@ -1124,21 +1314,21 @@ ac45145f7f463a27fd29d96306cdc09c
   fonts_glyphicons_halflings_regular_ttf9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "glyphicons-halflings-regular.ttf"#) -}
-2c534986a25868f00de8f3a0647660c7
+999c22a3e54fa4826df865ba3e816b1c
   fonts_glyphicons_halflings_regular_woff :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Settings.StaticFiles.fonts_glyphicons_halflings_regular_woff1
                   `cast`
                 (Sym (Yesod.Static.D:R:RouteStatic0[0])) -}
-a9c3f482f217d71ad50902df6af9a5f2
+6d6fa0285f508f7c6ede8f66fb025ad3
   fonts_glyphicons_halflings_regular_woff1 ::
     Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_woff5
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_woff2) -}
-41cb9c20ef542e9b27e43a97fd33370a
+353f4333d84a2ba6ff9cd2fada0543c8
   fonts_glyphicons_halflings_regular_woff10 ::
     Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
@@ -1146,7 +1336,7 @@ a9c3f482f217d71ad50902df6af9a5f2
                         @ Data.Text.Internal.Text
                         Settings.StaticFiles.fonts_glyphicons_halflings_regular_woff11 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-4ebdc8043e618cca68bacb2d6ce7eaeb
+ec8ff3c6c79ba237863c5c83a7193502
   fonts_glyphicons_halflings_regular_woff11 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1158,7 +1348,7 @@ a9c3f482f217d71ad50902df6af9a5f2
                         @ GHC.Prim.RealWorld
                         10#
                         s1 of ds1 { (#,#) ipv ipv1 ->
-                 Settings.StaticFiles.$wouter13
+                 Settings.StaticFiles.$wouter15
                    ipv1
                    4#
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot12
@@ -1182,7 +1372,7 @@ b91085e719e39bb1085c99080c53642a
 41e5babd8ad18263a62b77aa46c13f3d
   fonts_glyphicons_halflings_regular_woff4 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "aO0drAa_"#) -}
-5e0012ae9c9b122b2c056d4833fb274b
+29c53c92de3a78f3b47b82052579233d
   fonts_glyphicons_halflings_regular_woff5 ::
     [Data.Text.Internal.Text]
   {- Strictness: m2,
@@ -1190,7 +1380,7 @@ b91085e719e39bb1085c99080c53642a
                    @ Data.Text.Internal.Text
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_woff10
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_woff6) -}
-a364ac58231086d79069fcef73a959b3
+e61cafe4e9de9e68ad5582a326fc937e
   fonts_glyphicons_halflings_regular_woff6 ::
     [Data.Text.Internal.Text]
   {- Strictness: m2,
@@ -1198,14 +1388,14 @@ a364ac58231086d79069fcef73a959b3
                    @ Data.Text.Internal.Text
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_woff7
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-ec14a3f4d240ea432a434495141be8f8
+d2489214127a02c35a0989740d8bbdaf
   fonts_glyphicons_halflings_regular_woff7 :: Data.Text.Internal.Text
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.Text.Internal.Text
                         Settings.StaticFiles.fonts_glyphicons_halflings_regular_woff8 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-315ef5369bc7d50edfc4d5e93f73203c
+5fc25507804e96a669c790f691625e17
   fonts_glyphicons_halflings_regular_woff8 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1217,7 +1407,7 @@ ec14a3f4d240ea432a434495141be8f8
                         @ GHC.Prim.RealWorld
                         10#
                         s1 of ds1 { (#,#) ipv ipv1 ->
-                 Settings.StaticFiles.$wouter12
+                 Settings.StaticFiles.$wouter14
                    ipv1
                    4#
                    Settings.StaticFiles.fonts_glyphicons_halflings_regular_woff9
@@ -1227,6 +1417,306 @@ ec14a3f4d240ea432a434495141be8f8
   fonts_glyphicons_halflings_regular_woff9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "glyphicons-halflings-regular.woff"#) -}
+a69ccd95ba068001275d65a7f17436e9
+  img_logo_png :: Yesod.Static.StaticRoute
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Settings.StaticFiles.img_logo_png1
+                  `cast`
+                (Sym (Yesod.Static.D:R:RouteStatic0[0])) -}
+9115bc1349d40de87ab1d4a0abe0b9ce
+  img_logo_png1 :: Yesod.Static.R:RouteStatic
+  {- Strictness: m,
+     Unfolding: (Yesod.Static.StaticRoute
+                   Settings.StaticFiles.img_logo_png5
+                   Settings.StaticFiles.img_logo_png2) -}
+70cd66ee7415100a363efe6c5e705584
+  img_logo_png10 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Data.Text.Internal.Text
+                        Settings.StaticFiles.img_logo_png11 of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+edbe064122285dc0f2381cfafe3c70c0
+  img_logo_png11 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv ipv1 ->
+                 Settings.StaticFiles.$wouter17
+                   ipv1
+                   4#
+                   Settings.StaticFiles.img_logo_png12
+                   0#
+                   ipv }) -}
+b3830c75869cb41bb8c3b546dc82e39f
+  img_logo_png12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "img"#) -}
+921bbd59a1e8e2428d613491c3518f9e
+  img_logo_png2 ::
+    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                   Settings.StaticFiles.img_logo_png3
+                   (GHC.Types.[]
+                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
+bb756a34be95c6fb7427cec943bd9516
+  img_logo_png3 :: (Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Strictness: m,
+     Unfolding: ((Settings.StaticFiles.css_board_css5,
+                  Settings.StaticFiles.img_logo_png4)) -}
+e86851da0c1d31d773e02b86eb56fa2f
+  img_logo_png4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "C9EVNmec"#) -}
+f7bdcbef7110257855148d96e03d0274
+  img_logo_png5 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Settings.StaticFiles.img_logo_png10
+                   Settings.StaticFiles.img_logo_png6) -}
+ea1c22c72875c6c00e5d9b448d1900fe
+  img_logo_png6 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Settings.StaticFiles.img_logo_png7
+                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
+9cf4f8c3716c34a5ca6fc296c52c470e
+  img_logo_png7 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Data.Text.Internal.Text
+                        Settings.StaticFiles.img_logo_png8 of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+2ef59f02d34428abe53db660fd674b6c
+  img_logo_png8 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv ipv1 ->
+                 Settings.StaticFiles.$wouter16
+                   ipv1
+                   4#
+                   Settings.StaticFiles.img_logo_png9
+                   0#
+                   ipv }) -}
+e51b5a91c19c0df5d9d8da90f59404e2
+  img_logo_png9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "logo.png"#) -}
+54fc54550d9e4092612b7114e2e8a80c
+  js_bootstrap_bundle_min_js :: Yesod.Static.StaticRoute
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Settings.StaticFiles.js_bootstrap_bundle_min_js1
+                  `cast`
+                (Sym (Yesod.Static.D:R:RouteStatic0[0])) -}
+8f25c89e28ea8cdc400dde86bc8e32f2
+  js_bootstrap_bundle_min_js1 :: Yesod.Static.R:RouteStatic
+  {- Strictness: m,
+     Unfolding: (Yesod.Static.StaticRoute
+                   Settings.StaticFiles.js_bootstrap_bundle_min_js5
+                   Settings.StaticFiles.js_bootstrap_bundle_min_js2) -}
+8d2f5b3298d60b86deb7cd8c8d3614b4
+  js_bootstrap_bundle_min_js10 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Data.Text.Internal.Text
+                        Settings.StaticFiles.js_bootstrap_bundle_min_js11 of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+e262417f32e0af28a93acedf34241175
+  js_bootstrap_bundle_min_js11 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv ipv1 ->
+                 Settings.StaticFiles.$wouter19
+                   ipv1
+                   4#
+                   Settings.StaticFiles.js_bootstrap_bundle_min_js12
+                   0#
+                   ipv }) -}
+fd8d7b9921ebb0f4dd34c55ce1219d95
+  js_bootstrap_bundle_min_js12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "js"#) -}
+8e056a10470c27c2962fb222dd846ce1
+  js_bootstrap_bundle_min_js2 ::
+    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                   Settings.StaticFiles.js_bootstrap_bundle_min_js3
+                   (GHC.Types.[]
+                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
+88ea918423757c9c82466a6c475e8dc6
+  js_bootstrap_bundle_min_js3 ::
+    (Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Strictness: m,
+     Unfolding: ((Settings.StaticFiles.css_board_css5,
+                  Settings.StaticFiles.js_bootstrap_bundle_min_js4)) -}
+f541cb6cb77b95105ed1644de2a81e43
+  js_bootstrap_bundle_min_js4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "hb7xuGuH"#) -}
+40234ed1357d1c733dd7cb32966e2ab1
+  js_bootstrap_bundle_min_js5 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Settings.StaticFiles.js_bootstrap_bundle_min_js10
+                   Settings.StaticFiles.js_bootstrap_bundle_min_js6) -}
+812678e0404b45fc280b38f5c386fafb
+  js_bootstrap_bundle_min_js6 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Settings.StaticFiles.js_bootstrap_bundle_min_js7
+                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
+7610c748971ad353ef5a615f62c62b4e
+  js_bootstrap_bundle_min_js7 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Data.Text.Internal.Text
+                        Settings.StaticFiles.js_bootstrap_bundle_min_js8 of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+2442fb7e583e1d593a24a9c8a74a9ddb
+  js_bootstrap_bundle_min_js8 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv ipv1 ->
+                 Settings.StaticFiles.$wouter18
+                   ipv1
+                   4#
+                   Settings.StaticFiles.js_bootstrap_bundle_min_js9
+                   0#
+                   ipv }) -}
+e962fdfff6b43354e7f73178e4c96a6d
+  js_bootstrap_bundle_min_js9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "bootstrap.bundle.min.js"#) -}
+5eba731342d4997e5e616ab125e749bd
+  js_jquery_min_js :: Yesod.Static.StaticRoute
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Settings.StaticFiles.js_jquery_min_js1
+                  `cast`
+                (Sym (Yesod.Static.D:R:RouteStatic0[0])) -}
+24760032cba122e16408712084198420
+  js_jquery_min_js1 :: Yesod.Static.R:RouteStatic
+  {- Strictness: m,
+     Unfolding: (Yesod.Static.StaticRoute
+                   Settings.StaticFiles.js_jquery_min_js5
+                   Settings.StaticFiles.js_jquery_min_js2) -}
+d5315ae486471ce3163c9533a7abcbc6
+  js_jquery_min_js10 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Data.Text.Internal.Text
+                        Settings.StaticFiles.js_jquery_min_js11 of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+df1fa44fcfb9b3e1edf734537fd23574
+  js_jquery_min_js11 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv ipv1 ->
+                 Settings.StaticFiles.$wouter21
+                   ipv1
+                   4#
+                   Settings.StaticFiles.js_bootstrap_bundle_min_js12
+                   0#
+                   ipv }) -}
+421b62ed4e5bebbe9d52bca7489f7d14
+  js_jquery_min_js2 ::
+    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                   Settings.StaticFiles.js_jquery_min_js3
+                   (GHC.Types.[]
+                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
+34fa82563e1b53d0793ff8404480a593
+  js_jquery_min_js3 ::
+    (Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Strictness: m,
+     Unfolding: ((Settings.StaticFiles.css_board_css5,
+                  Settings.StaticFiles.js_jquery_min_js4)) -}
+cc683aa72b68a43ceccde07dfaa4c773
+  js_jquery_min_js4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "yfWu7KOt"#) -}
+87ad0b18899203460b6daed7ee5ed930
+  js_jquery_min_js5 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Settings.StaticFiles.js_jquery_min_js10
+                   Settings.StaticFiles.js_jquery_min_js6) -}
+f104097e72f5bd89c36e91470dfa8973
+  js_jquery_min_js6 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Settings.StaticFiles.js_jquery_min_js7
+                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
+9c90abf5ad5b90f7fd46f687701d5f3d
+  js_jquery_min_js7 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Data.Text.Internal.Text
+                        Settings.StaticFiles.js_jquery_min_js8 of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+970e99871781fa62e7acf74ac65ca908
+  js_jquery_min_js8 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv ipv1 ->
+                 Settings.StaticFiles.$wouter20
+                   ipv1
+                   4#
+                   Settings.StaticFiles.js_jquery_min_js9
+                   0#
+                   ipv }) -}
+c389a9082653dfa48690fe265e1a5a63
+  js_jquery_min_js9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "jquery.min.js"#) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
