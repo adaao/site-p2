@@ -5,7 +5,7 @@
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE TypeFamilies #-}
 module Handler.Home where
-
+--chama a pagina principal
 import Import
 
 formLogin :: Form (Text,Text) 
