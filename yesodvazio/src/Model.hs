@@ -15,6 +15,7 @@ import Database.Persist.Quasi
 -- You can define all of your database entities in the entities file.
 -- You can find more information on persistent and how to declare entities
 -- at:
+-- pelo que eu lembro aqui configura a persistencia de dados
 -- http://www.yesodweb.com/book/persistent/
 share [mkPersist sqlSettings, mkMigrate "migrateAll"]
     $(persistFileWith lowerCaseSettings "config/models")

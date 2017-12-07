@@ -12,5 +12,6 @@ comando maneiro:
 
 drop schema public cascade
 
+apaga tudo ne?
 
 anotando mais um commit
