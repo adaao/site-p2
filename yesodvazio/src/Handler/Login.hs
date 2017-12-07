@@ -14,7 +14,7 @@ formLogin :: Form (Text,Text)
 formLogin = renderDivs $ (,) 
     <$> areq emailField "Email: " Nothing
     <*> areq passwordField "Senha: " Nothing
-    
+-- este arquivo me deu dor de cabeca, mas ele e importante    
 getLogarR :: Handler Html
 getLogarR = do 
     (widget,enctype) <- generateFormPost formLogin

@@ -94,7 +94,7 @@ instance FromJSON AppSettings where
 
 -- | Settings for 'widgetFile', such as which template languages to support and
 -- default Hamlet settings.
---
+-- esse deve ser um arquivo bom de estudar
 -- For more information on modifying behavior, see:
 --
 -- https://github.com/yesodweb/yesod/wiki/Overriding-widgetFile
