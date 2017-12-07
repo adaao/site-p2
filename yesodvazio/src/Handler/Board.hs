@@ -25,5 +25,3 @@ postCreateBoardR = do
   newBoardId <- runDB $ insert newBoard
   sendStatusJSON created201 (object ["resp" .= (fromSqlKey newBoardId)])
 
-getListBoardsR :: Handler Value
-getListBoardsR = undefined
