@@ -10,6 +10,15 @@ module Handler.Users where
 import Import
 import Database.Persist.Postgresql
 
+formUser :: Form Users
+formUser = undefined 
+
+getUserR :: Handler Html
+getUserR = undefined 
+
+postUserR :: Handler Html
+postUserR = undefined
+
 postCreateUserR :: Handler Value
 postCreateUserR = do
     newUser <- requireJsonBody :: Handler Users
