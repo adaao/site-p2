@@ -26,7 +26,7 @@ postCreatePublicationR = do
     newObj <- requireJsonBody :: Handler Publication
     newObjId <- runDB $ insert newObj
     sendStatusJSON created201 (object ["resp" .= (fromSqlKey newObjId)])
- 
+-- esse aqui eu nao entendi nada 
 getListPublicationByBoardId :: BoardId -> Widget
 getListPublicationByBoardId bid = do
     threads <- handlerToWidget $ runDB $ selectList [ PublicationBoardid ==. bid ] [Desc PublicationId]
