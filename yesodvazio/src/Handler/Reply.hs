@@ -9,7 +9,7 @@ module Handler.Reply where
 import Import
 import Network.HTTP.Types.Status
 import Database.Persist.Postgresql
-
+-- este arquivo cria o reply do post
 postCreateReplyR :: Handler Value
 postCreateReplyR = do
     newObj <- requireJsonBody :: Handler Reply
