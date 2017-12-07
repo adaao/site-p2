@@ -18,4 +18,3 @@ VALUES (0, 'Usuario'), (1, 'Administrador');
 INSERT INTO users (id, email, nickName, password, userCategoryId)
 VALUES (0, 'no email', 'root', 'root', 1), (1, 'sem email', 'usuario', 'abc', 0);
 
---aqui ficam os comandos de insert no banco de dados
