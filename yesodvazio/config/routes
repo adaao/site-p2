@@ -25,3 +25,5 @@
 /reply/create             CreateReplyR POST
 
 -- /users/readUser/#UsersId/read     ReadUserR     GET
+
+--aqui ficam as rotas
