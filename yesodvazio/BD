@@ -4,3 +4,5 @@ psql -h ec2-50-17-201-204.compute-1.amazonaws.com -U anjieiifxtoety -d db8v45mcb
 
 comando para apagar tudo:
 drop schema public cascade
+
+
