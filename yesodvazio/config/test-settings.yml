@@ -4,7 +4,7 @@ database:
   # production database during testing. If you're not concerned about that and
   # would like to have environment variable overrides, you could instead use
   # something like:
-  #
+  #   
   #   database: "_env:PGDATABASE:aulahaskell_LOWER_test"
   database: aulahaskell_LOWER_test
 
