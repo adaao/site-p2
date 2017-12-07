@@ -26,26 +26,7 @@ postCreatePublicationR = do
     newObj <- requireJsonBody :: Handler Publication
     newObjId <- runDB $ insert newObj
     sendStatusJSON created201 (object ["resp" .= (fromSqlKey newObjId)])
-
-{-
-getListPublicationR :: Handler Value
-getListPublicationR = do
-    publicationList <- runDB $ selectList [] [Asc PublicationTitle]
-    sendStatusJSON ok200 (object ["resp" .= (toJSON publicationList)])
-    
-getReadPublicationR :: PublicationId -> Handler Value
-getReadPublicationR objId = do
-    obj <- runDB $ get404 objId
-    sendStatusJSON ok200 (object ["resp" .= (toJSON obj)])
-
-putUpdatePublicationR :: PublicationId -> Handler Value
-putUpdatePublicationR objId = do
-    _ <- runDB $ get404 objId
-    updatedObj <- requireJsonBody :: Handler Publication
-    runDB $ replace objId updatedObj
-    sendStatusJSON noContent204 (object ["resp" .= (fromSqlKey objId)])
--}
-    
+ 
 getListPublicationByBoardId :: BoardId -> Widget
 getListPublicationByBoardId bid = do
     threads <- handlerToWidget $ runDB $ selectList [ PublicationBoardid ==. bid ] [Desc PublicationId]
