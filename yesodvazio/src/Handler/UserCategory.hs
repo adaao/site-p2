@@ -28,7 +28,7 @@ putUpdateUserCategoryR categoryToBeUpdatedId = do
     sendStatusJSON noContent204 (object ["resp" .= (fromSqlKey categoryToBeUpdatedId)])
     
   
-
+--mostra as categorias
 getListUserTypeR :: Handler Value
 getListUserTypeR = do
   userTypeList <- runDB $ selectList [] [Asc UserCategoryUserType]
