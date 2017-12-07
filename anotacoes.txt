@@ -13,3 +13,4 @@ comando maneiro:
 drop schema public cascade
 
 
+anotando mais um commit
