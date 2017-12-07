@@ -18,7 +18,7 @@ getBoardR sigla = do
     Nothing -> defaultLayout [whamlet| <div>Erro 404|]
     Just (Entity boardid board) -> 
       defaultLayout $(whamletFile "templates/Board.hamlet")
-    
+-- outro igual ao common    
 postCreateBoardR :: Handler Value
 postCreateBoardR = do
   newBoard <- requireJsonBody :: Handler Board
